@@ -1,0 +1,155 @@
+.m-1 {
+  margin: 10px;
+}
+.m-2-5 {
+  margin: 20px 50px;
+}
+.mrl-1 {
+  margin: 0 10px;
+}
+.mrl-2 {
+  margin: 0 20px;
+}
+.mr-05 {
+  margin-right: 5px;
+}
+.mr-1 {
+  margin-right: 10px;
+}
+.mr-2 {
+  margin-right: 20px;
+}
+.mr-3 {
+  margin-right: 30px;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 20px;
+}
+.p-3 {
+  padding: 30px;
+}
+.pt-5 {
+  padding-top: 50px;
+}
+.p-0-2 {
+  padding: 0 20px;
+}
+.p-2-0 {
+  padding: 20px 0;
+}
+.p-4-0 {
+  padding: 40px 0;
+}
+.p-1-2 {
+  padding: 10px 20px;
+  // font-size: 18px;
+}
+
+.p-2-4 {
+  padding: 20px 40px;
+}
+
+.font-large-xxx {
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+.font-large-xx {
+  font-size: xx-large;
+}
+
+.font-large {
+  font-size: large;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.height-600 {
+  height: 600px;
+}
+.height-400 {
+  height: 400px;
+}
+
+.button-transparent {
+  background-color: transparent;
+  border: 2px solid $white;
+  line-height: 0px;
+  color: $white;
+  &:hover {
+    color: $primary-color;
+    background-color: $white;
+    border: 2px solid $white;
+  }
+}
+
+.button-white {
+  color: $primary-color;
+  background-color: $white;
+  border: 2px solid $white;
+  line-height: 0px;
+  &:hover {
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+  }
+}
+
+.btn-primary-transparent {
+  color: $link-active;
+  background-color: transparent;
+  border: 2px solid $link-active;
+  line-height: 0px;
+  &:hover {
+    background-color: $link-active;
+    border: 2px solid $white;
+    color: $white;
+  }
+}
+
+.btn-primary {
+  color: $white;
+  background-color: $link-active;
+  border: 2px solid $link-active;
+  line-height: 0px;
+  &:hover {
+    background-color: transparent;
+    border: 2px solid $link-active;
+    color: $link-active;
+  }
+}
+
+.white {
+  color: $white;
+}
+.bg-white {
+  background-color: $white;
+}
+
+.container-content {
+  margin: 15px 250px;
+  // background-color: salmon;
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  align-items: center;
+}

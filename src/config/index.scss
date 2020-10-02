@@ -1,0 +1,18 @@
+$white: #fff;
+$black: #3f3d56;
+$link-active: #8f88ff;
+$primary-color: #6c63ff;
+
+body {
+  background-color: #eaeaea;
+}
+
+// harus selalu dibawah
+@import "generals.scss";
+
+// Organisims
+@import "components/organisims/headers/navbar.scss";
+@import "components/organisims/sliders/sliders.scss";
+
+// Atoms
+@import "components/atoms/links/links.scss";

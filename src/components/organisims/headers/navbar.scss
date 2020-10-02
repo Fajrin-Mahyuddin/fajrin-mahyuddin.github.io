@@ -1,0 +1,14 @@
+.navbar {
+  background-color: $white;
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  // background-color: salmon;
+  align-items: center;
+  padding: 0 100px;
+  .logo {
+    height: 70px;
+    margin: 10px 0;
+  }
+}

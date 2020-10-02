@@ -1,0 +1,8 @@
+.link-btn {
+  color: $black;
+
+  &:hover {
+    background-color: $link-active;
+    color: $white;
+  }
+}
