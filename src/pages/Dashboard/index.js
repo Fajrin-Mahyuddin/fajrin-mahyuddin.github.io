@@ -1,5 +1,5 @@
 import React from "react";
-import { Layouts, Sliders, About, Services } from "components";
+import { Layouts, Sliders, About, Services, StackTemp } from "components";
 
 const Dashboard = () => {
   return (
@@ -7,6 +7,7 @@ const Dashboard = () => {
       <Sliders />
       <About />
       <Services />
+      <StackTemp />
     </Layouts>
   );
 };
