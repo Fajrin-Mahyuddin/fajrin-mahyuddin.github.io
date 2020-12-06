@@ -3,8 +3,10 @@ import { ContentStack } from "components";
 
 const StackTemp = () => {
   return (
-    <div className="bg-white">
-      <ContentStack />
+    <div className="container-content text-center p-4-0">
+      <div>
+        <ContentStack />
+      </div>
     </div>
   );
 };

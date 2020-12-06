@@ -2,6 +2,7 @@ import React from "react";
 import { Title, Text, Image } from "components";
 import Service01 from "assets/images/service-01.svg";
 import Service02 from "assets/images/service-02.svg";
+import { Col, Row } from "antd";
 
 const Services = () => {
   return (
@@ -12,10 +13,33 @@ const Services = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, quis!
           Excepturi accusamus blanditiis dolorem facilis?
         </Text>
-        <div>
-          <Image className="mr-2" src={Service01} alt="servces-01" />
-          <Image src={Service02} alt="servces-02" />
-        </div>
+
+        <Row>
+          <Col flex="2">
+            <Image
+              width="99%"
+              className="ml-05"
+              src={Service01}
+              alt="servces-01"
+            />
+          </Col>
+          <Col flex="2">
+            <Image
+              className="ml-05"
+              width="99%"
+              src={Service02}
+              alt="servces-02"
+            />
+          </Col>
+          <Col flex="2">
+            <Image
+              className="ml-05"
+              width="99%"
+              src={Service02}
+              alt="servces-02"
+            />
+          </Col>
+        </Row>
       </div>
     </div>
   );

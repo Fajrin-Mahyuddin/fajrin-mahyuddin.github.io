@@ -7,7 +7,7 @@ const ContentSlider = () => {
     <div className="absolute-content container-content">
       <div className="content align-center">
         <CardSlider />
-        <Image className="height-600" src={HumanSvg} alt="https://undraw.co" />
+        <Image height="85%" src={HumanSvg} alt="https://undraw.co" />
       </div>
     </div>
   );

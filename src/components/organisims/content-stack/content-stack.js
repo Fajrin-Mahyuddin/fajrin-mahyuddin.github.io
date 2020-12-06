@@ -1,11 +1,23 @@
 import React from "react";
-import { Title } from "components";
+import { Title, Text, Label } from "components";
 
 const ContentStack = () => {
+  const stack = ["Javascript", "Express", "Grapql"];
   return (
-    <div className="container-content">
-      <div className="content">
-        <Title>Stack</Title>
+    <div>
+      <Title className="text-bold font-large-xx ">Skills</Title>
+      <div>
+        <Text>
+          {" "}
+          Stack:
+          {stack.map((item, i) => {
+            return (
+              <Label key={i} className="ml-05">
+                {item}
+              </Label>
+            );
+          })}
+        </Text>
       </div>
     </div>
   );

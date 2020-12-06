@@ -7,7 +7,8 @@ const ContentAbout = () => {
   return (
     <>
       <Image
-        className="mr-3 height-400"
+        width="50%"
+        className="mr-3"
         src={AboutSvg}
         alt="https://undraw.co"
       />

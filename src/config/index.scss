@@ -7,9 +7,6 @@ body {
   background-color: #eaeaea;
 }
 
-// harus selalu dibawah
-@import "generals.scss";
-
 // Organisims
 @import "components/organisims/headers/navbar.scss";
 @import "components/organisims/sliders/sliders.scss";
@@ -17,3 +14,7 @@ body {
 // Atoms
 @import "components/atoms/links/links.scss";
 @import "components/atoms/tags/tags.scss";
+@import "components/atoms/label/label.scss";
+
+// harus selalu dibawah
+@import "generals.scss";
