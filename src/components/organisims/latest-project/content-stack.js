@@ -7,17 +7,7 @@ const LatesProject = () => {
     <div>
       <Title className="text-bold font-large-xx ">Latest Project</Title>
       <div>
-        <Text>
-          {" "}
-          Stack:
-          {stack.map((item, i) => {
-            return (
-              <Label key={i} className="ml-05">
-                {item}
-              </Label>
-            );
-          })}
-        </Text>
+        <Text>Galery</Text>
       </div>
     </div>
   );
