@@ -1,5 +1,13 @@
 import React from "react";
-import { Layouts, Sliders, About, Services, StackTemp } from "components";
+import {
+  Layouts,
+  Sliders,
+  About,
+  Services,
+  StackTemp,
+  LatestProject,
+  Experience,
+} from "components";
 
 const Dashboard = () => {
   return (
@@ -7,6 +15,8 @@ const Dashboard = () => {
       <Sliders />
       <About />
       <Services />
+      <LatestProject />
+      <Experience />
       <StackTemp />
     </Layouts>
   );

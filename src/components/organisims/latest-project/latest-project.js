@@ -1,7 +1,7 @@
 import React from "react";
 import { Title, Text, Label } from "components";
 
-const LatesProject = () => {
+const LatestProject = () => {
   const stack = ["Javascript", "Express", "Grapql"];
   return (
     <div>
@@ -13,4 +13,4 @@ const LatesProject = () => {
   );
 };
 
-export default LatesProject;
+export default LatestProject;
