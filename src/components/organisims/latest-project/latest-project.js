@@ -4,7 +4,7 @@ import { Title, Text, Label, Image } from "components";
 const LatestProject = () => {
   const stack = ["Javascript", "Express", "Grapql"];
   return (
-    <div>
+    <div className="container-content p-4-0 text-center">
       <Title className="text-bold font-large-xx ">Latest Project</Title>
       <div className="image-wrapper">
         <Image
