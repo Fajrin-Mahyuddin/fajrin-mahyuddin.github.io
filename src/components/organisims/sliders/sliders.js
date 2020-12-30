@@ -1,5 +1,5 @@
 import React from "react";
-import Slide_bg from "assets/images/slide-bg.svg";
+import Slide_bg from "assets/images/pemandangan.svg";
 
 import { ContentSlider, Image } from "components";
 

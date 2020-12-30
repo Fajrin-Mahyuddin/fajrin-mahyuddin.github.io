@@ -8,8 +8,16 @@
   background-color: $white;
   .slide-bg {
     margin-top: 35px;
+
     img {
-      width: 100%;
+      // background-color: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      // object-fit: cover;
     }
   }
   .absolute-content {
