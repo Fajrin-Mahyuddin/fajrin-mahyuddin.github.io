@@ -1,12 +1,14 @@
 import React from "react";
-import { Title, Text, Label } from "components";
+import { Title, ExperienceList } from "components";
 
 const Experience = () => {
   const stack = ["Javascript", "Express", "Grapql"];
   return (
-    <div>
+    <div className="container-content text-center p-4-0">
       <Title className="text-bold font-large-xx ">Exprerience</Title>
-      <div></div>
+      <div>
+        <ExperienceList />
+      </div>
     </div>
   );
 };

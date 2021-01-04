@@ -4,7 +4,7 @@ import ContentAbout from "./content-about/content_about";
 import ContentSlider from "./content-slider/content_slider";
 import ContentStack from "./content-stack/content-stack";
 import LatestProject from "./latest-project/latest-project";
-import Experience from "./experience/experience";
+import ExperienceList from "./experience/experience-list";
 
 export {
   Navbar,
@@ -13,5 +13,5 @@ export {
   ContentStack,
   ContentSlider,
   LatestProject,
-  Experience,
+  ExperienceList,
 };
