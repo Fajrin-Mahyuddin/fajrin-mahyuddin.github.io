@@ -6,8 +6,8 @@ import { Col, Row } from "antd";
 
 const Services = () => {
   return (
-    <div className="bg-white">
-      <div className="container-content text-center p-4-0">
+    <div className="bg-white" id="service">
+      <div className="container-content text-center p-55-0">
         <Title className="text-bold font-large-xx">Services</Title>
         <Text>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, quis!
@@ -21,14 +21,6 @@ const Services = () => {
               className="ml-05"
               src={Service01}
               alt="servces-01"
-            />
-          </Col>
-          <Col flex="2">
-            <Image
-              className="ml-05"
-              width="99%"
-              src={Service02}
-              alt="servces-02"
             />
           </Col>
           <Col flex="2">

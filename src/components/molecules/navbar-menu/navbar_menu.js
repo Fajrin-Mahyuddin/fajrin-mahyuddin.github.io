@@ -1,13 +1,49 @@
 import React from "react";
+import { Link } from "react-scroll";
 import { Links } from "components";
 
 const NavbarMenu = () => {
   return (
     <div className="navbar-menu">
-      <Links className="link-btn p-1-2 mrl-1">Home</Links>
-      <Links className="link-btn p-1-2 mrl-1">Blog</Links>
-      <Links className="link-btn p-1-2 mrl-1">About Me</Links>
-      <Links className="link-btn p-1-2 mrl-1">Galery</Links>
+      <Link
+        activeClass="active"
+        className="link-btn p-1-2 mrl-1"
+        to="main"
+        smooth={true}
+        spy={true}
+        duration={700}
+      >
+        Main
+      </Link>
+      <Link
+        activeClass="active"
+        className="link-btn p-1-2 mrl-1"
+        to="about"
+        smooth={true}
+        spy={true}
+        duration={700}
+      >
+        About
+      </Link>
+      <Link
+        activeClass="active"
+        className="link-btn p-1-2 mrl-1"
+        to="service"
+        smooth={true}
+        spy={true}
+        duration={700}
+      >
+        Service
+      </Link>
+      <Link
+        className="link-btn p-1-2 mrl-1"
+        to="project"
+        smooth={true}
+        spy={true}
+        duration={700}
+      >
+        Project
+      </Link>
     </div>
   );
 };

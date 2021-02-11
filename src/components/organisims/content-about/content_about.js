@@ -1,18 +1,14 @@
 import React from "react";
-import { Button } from "antd";
-import { Text, Title, Image } from "components";
-import { AboutSvg } from "assets";
+import { Text, Title, Image, ContentStack } from "components";
+import { me } from "assets";
 
 const ContentAbout = () => {
   return (
     <>
-      <Image
-        width="50%"
-        className="mr-3"
-        src={AboutSvg}
-        alt="https://undraw.co"
-      />
-      <div style={{ marginTop: "-100px" }}>
+      <div className="me-profile">
+        <Image className="mr-3" src={me} alt="https://undraw.co" />
+      </div>
+      <div>
         <Title className="text-bold font-large-xx">About Me</Title>
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
@@ -21,10 +17,11 @@ const ContentAbout = () => {
           praesentium at. Quaerat quia earum doloremque doloribus illum
           architecto consectetur nostrum commodi fuga. Molestiae.
         </Text>
-        <Button className="btn-primary-transparent p-1-2 mr-1">
+        <ContentStack />
+        <button className="btn-primary-transparent p-1-2 mr-1">
           See Details
-        </Button>
-        <Button className="btn-primary p-1-2">Download CV</Button>
+        </button>
+        <button className="btn-primary p-1-2">Download CV</button>
       </div>
     </>
   );

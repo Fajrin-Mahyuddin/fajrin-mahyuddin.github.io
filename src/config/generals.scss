@@ -55,6 +55,10 @@
   padding: 40px 0;
 }
 
+.p-55-0 {
+  padding: 55px 0;
+}
+
 .p-2-4 {
   padding: 20px 40px;
 }
@@ -74,6 +78,7 @@
 
 .text-bold {
   font-weight: bold;
+  color: $primary-color;
 }
 
 .height-600 {
@@ -119,16 +124,16 @@
   }
 }
 
-.btn-primary {
+.medium-btn {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-btn {
   color: $white;
-  background-color: $link-active;
-  border: 2px solid $link-active;
-  line-height: 0px;
-  &:hover {
-    background-color: transparent;
-    border: 2px solid $link-active;
-    color: $link-active;
-  }
+  background-color: $primary-color;
 }
 
 .white {
@@ -140,6 +145,8 @@
 
 .container-content {
   margin: 15px 250px;
+  height: 100vh;
+  // padding-top: 40px;
   // background-color: salmon;
   .content {
     height: 100%;
@@ -155,4 +162,17 @@
 
 .align-center {
   align-items: center;
+}
+
+.me-profile {
+  // width: 200px;
+  // margin-right: 50px;
+  // border-radius: 50%;
+  // overflow: hidden;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid $white;
+  }
 }

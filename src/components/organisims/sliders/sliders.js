@@ -5,7 +5,7 @@ import { ContentSlider, Image } from "components";
 
 const Sliders = () => {
   return (
-    <div className="slider-container">
+    <div className="slider-container" id="main">
       <div className="slide-bg">
         <Image src={Slide_bg} alt="slider" />
       </div>

@@ -1,10 +1,18 @@
 $white: #fff;
 $black: #3f3d56;
 $link-active: #8f88ff;
-$primary-color: #6c63ff;
+$primary-color: #121d50;
 
-body {
-  background-color: #eaeaea;
+// body {
+// background-color: #eaeaea;
+// background-color: salmon;
+// }
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 // Organisims

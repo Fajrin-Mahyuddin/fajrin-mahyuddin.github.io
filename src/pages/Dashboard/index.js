@@ -6,18 +6,17 @@ import {
   Services,
   StackTemp,
   LatestProject,
-  Experience,
 } from "components";
 
 const Dashboard = () => {
+  // console.log("width of scrolling", window.pageXOffset);
+
   return (
     <Layouts>
       <Sliders />
       <About />
       <Services />
       <LatestProject />
-      <Experience />
-      <StackTemp />
     </Layouts>
   );
 };

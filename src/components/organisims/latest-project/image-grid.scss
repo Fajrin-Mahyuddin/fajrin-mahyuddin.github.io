@@ -50,7 +50,7 @@
     grid-row-end: 3;
   }
   .img:nth-child(3) {
-    background-color: $link-active;
+    background-color: $primary-color;
     color: $white;
     grid-column-start: 5;
     grid-column-end: 6;
@@ -58,14 +58,14 @@
     grid-row-end: 3;
   }
   .img:nth-child(4) {
-    background-color: $link-active;
+    background-color: $primary-color;
     grid-column-start: 6;
     grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 3;
   }
   .img:nth-child(5) {
-    background-color: $link-active;
+    background-color: $primary-color;
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 3;

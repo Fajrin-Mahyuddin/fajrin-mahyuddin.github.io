@@ -3,7 +3,7 @@ import { ContentAbout } from "components";
 
 const About = () => {
   return (
-    <div className="container-content p-4-0">
+    <div className="container-content p-55-0" id="about">
       <div className="content align-center">
         <ContentAbout />
       </div>

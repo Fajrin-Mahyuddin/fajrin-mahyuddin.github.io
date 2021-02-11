@@ -1,16 +1,15 @@
 import React from "react";
-import { Button } from "antd";
 import { Text, Title } from "components";
 
 const CardSlider = () => {
   return (
-    <div>
+    <div className="slider-text">
       <Title className="font-large-xxx text-bold">I'm Fajrin</Title>
       <Text className="font-large-xx">
         Create your website and <br /> application here
       </Text>
-      <Button className=" font-large p-2-4 mr-05">Need a wesite</Button>
-      <Button className=" font-large p-2-4">Hire Me</Button>
+      <button className="medium-btn default-btn mr-05">Need a wesite</button>
+      <button className="medium-btn primary-btn ">Hire Me</button>
     </div>
   );
 };
