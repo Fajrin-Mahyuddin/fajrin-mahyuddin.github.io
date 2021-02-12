@@ -2,6 +2,7 @@ $white: #fff;
 $black: #3f3d56;
 $link-active: #8f88ff;
 $primary-color: #121d50;
+$danger-color: #e22323;
 
 // body {
 // background-color: #eaeaea;
@@ -20,6 +21,7 @@ body,
 @import "components/organisims/sliders/sliders.scss";
 @import "components/organisims/latest-project/image-grid.scss";
 @import "components/organisims/experience/experience.scss";
+@import "components/templates/about/about.scss";
 // Atoms
 @import "components/atoms/links/links.scss";
 @import "components/atoms/tags/tags.scss";

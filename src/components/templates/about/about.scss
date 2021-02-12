@@ -1,0 +1,22 @@
+.bg-about {
+  height: 100vh;
+  position: relative;
+  .content {
+    color: $black;
+    padding: 15px 250px;
+    display: flex;
+    flex-direction: row;
+    .me-profile {
+      img {
+        width: 150px;
+      }
+    }
+  }
+  .batik {
+    position: absolute;
+    z-index: 1;
+    width: 25vw;
+    bottom: 10vh;
+    right: 10vw;
+  }
+}

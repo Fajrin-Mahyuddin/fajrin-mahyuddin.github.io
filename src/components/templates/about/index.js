@@ -1,12 +1,20 @@
 import React from "react";
 import { ContentAbout } from "components";
+import { bg_about } from "assets";
+import { Image } from "components";
 
 const About = () => {
   return (
-    <div className="container-content p-55-0" id="about">
+    <div className="p-55-0 bg-about" id="about">
       <div className="content align-center">
         <ContentAbout />
       </div>
+      <Image
+        className="mr-3"
+        className="batik"
+        src={bg_about}
+        alt="https://undraw.co"
+      />
     </div>
   );
 };

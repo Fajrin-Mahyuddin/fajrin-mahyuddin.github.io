@@ -29,6 +29,10 @@
   margin-top: 20px;
 }
 
+.mt-5 {
+  margin-top: 50px;
+}
+
 .p-1 {
   padding: 10px;
 }
@@ -136,6 +140,11 @@
   background-color: $primary-color;
 }
 
+.danger-btn {
+  color: $white;
+  background-color: $danger-color;
+}
+
 .white {
   color: $white;
 }
@@ -162,17 +171,4 @@
 
 .align-center {
   align-items: center;
-}
-
-.me-profile {
-  // width: 200px;
-  // margin-right: 50px;
-  // border-radius: 50%;
-  // overflow: hidden;
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid $white;
-  }
 }

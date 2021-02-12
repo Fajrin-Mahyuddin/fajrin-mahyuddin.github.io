@@ -8,20 +8,33 @@
   z-index: 1;
   .slide-bg {
     // margin-top: 35px;
-    width: 100vw;
-    img {
-      // background-color: red;
+
+    .gunung {
       position: absolute;
+      // background-color: red;
       width: 100%;
-      height: 100vh;
+      // height: 100vh;
+      bottom: -2px;
       // object-fit: cover;
+    }
+    .matahari {
+      width: 10%;
+      position: absolute;
+      left: 55vw;
+      top: 25vh;
+    }
+    .balon-udara {
+      width: 10%;
+      position: absolute;
+      left: 80vw;
+      top: 20vh;
     }
   }
   .absolute-content {
     position: absolute;
     z-index: 2;
-    top: 0;
-    left: 0;
+    top: -15%;
+    left: -10%;
     right: 0;
     bottom: 0;
     align-items: center;

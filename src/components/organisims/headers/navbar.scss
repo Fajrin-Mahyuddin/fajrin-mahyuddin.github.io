@@ -6,7 +6,7 @@
   justify-content: space-between;
   // background-color: salmon;
   position: fixed;
-  z-index: 2;
+  z-index: 12;
   align-items: center;
   // padding: 0 100px;
   .logo {
@@ -45,6 +45,10 @@
   .navbar-menu {
     .link-btn {
       color: $white;
+      &:hover {
+        border-bottom: 2.8px solid $white;
+        color: $white;
+      }
     }
     .active {
       border-bottom: 2.8px solid $white;
