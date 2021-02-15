@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import { Title, Text, Label, Image } from "components";
 import { SpringGrid, layout, CSSGrid } from "react-stonecutter";
+import { ams, pabalu } from "assets";
 
 const LatestProject = () => {
   const stack = [
     {
-      src:
-        "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
+      src: ams,
     },
     {
-      src:
-        "https://i.picsum.photos/id/101/2621/1747.jpg?hmac=cu15YGotS0gIYdBbR1he5NtBLZAAY6aIY5AbORRAngs",
+      src: pabalu,
     },
     {
-      src:
-        "https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg",
+      src: ams,
     },
     {
       src:
@@ -67,9 +65,6 @@ const LatestProject = () => {
           layout={layout.pinterest}
           duration={500}
           easing="ease-out"
-          enter={() => ({ translateY: 222 })}
-          entered={() => ({ scale: 1, opacity: 1 })}
-          exit={() => ({ scale: 0, opacity: 0 })}
         >
           {imgs.map((item, i) => {
             return (
