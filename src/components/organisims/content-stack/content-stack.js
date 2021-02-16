@@ -2,7 +2,7 @@ import React from "react";
 import { Title, Text, Label } from "components";
 
 const ContentStack = () => {
-  const stack = ["Javascript", "Express", "Grapql"];
+  const stack = ["ReactJS", "React Native", "Express", "Laravel", "Rest-API"];
   return (
     <div>
       {" "}

@@ -27,5 +27,8 @@ body,
 @import "components/atoms/tags/tags.scss";
 @import "components/atoms/label/label.scss";
 
+// molecules
+@import "components/molecules/tabs/tabs.scss";
+
 // harus selalu dibawah
 @import "generals.scss";

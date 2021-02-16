@@ -172,3 +172,9 @@
 .align-center {
   align-items: center;
 }
+.profile-item {
+  margin: 8px 0;
+  a {
+    color: $primary-color;
+  }
+}

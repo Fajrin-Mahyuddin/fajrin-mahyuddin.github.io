@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { Links } from "components";
 
 const NavbarMenu = () => {
   return (

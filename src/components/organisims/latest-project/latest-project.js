@@ -1,75 +1,110 @@
 import React, { useState } from "react";
-import { Title, Text, Label, Image } from "components";
-import { SpringGrid, layout, CSSGrid } from "react-stonecutter";
-import { ams, pabalu } from "assets";
+import { Title, Tabs } from "components";
+import { layout, CSSGrid } from "react-stonecutter";
+import {
+  ams,
+  bank_skripsi,
+  default_img,
+  evalap,
+  pabalu,
+  ppdb_passikola,
+  sitinaja,
+  spkt_barombong,
+  telegraph,
+} from "assets";
+import { Image } from "antd";
 
 const LatestProject = () => {
   const stack = [
     {
       src: ams,
+      kat: "web-app",
     },
     {
       src: pabalu,
+      kat: "mobile-app",
     },
     {
-      src: ams,
+      src: bank_skripsi,
+      kat: "web-app",
     },
     {
-      src:
-        "https://i.picsum.photos/id/1016/3844/2563.jpg?hmac=WEryKFRvTdeae2aUrY-DHscSmZuyYI9jd_-p94stBvc",
+      src: evalap,
+      kat: "web-app",
     },
     {
-      src:
-        "https://i.picsum.photos/id/1016/3844/2563.jpg?hmac=WEryKFRvTdeae2aUrY-DHscSmZuyYI9jd_-p94stBvc",
+      src: ppdb_passikola,
+      kat: "web-app",
+    },
+    {
+      src: sitinaja,
+      kat: "web-app",
+    },
+    {
+      src: spkt_barombong,
+      kat: "web-app",
+    },
+    {
+      src: telegraph,
+      kat: "web-app",
     },
   ];
-  const stack1 = [
-    {
-      src:
-        "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
-    },
-
-    {
-      src:
-        "https://i.picsum.photos/id/1016/3844/2563.jpg?hmac=WEryKFRvTdeae2aUrY-DHscSmZuyYI9jd_-p94stBvc",
-    },
-  ];
-  const stack2 = [
-    {
-      src:
-        "https://i.picsum.photos/id/101/2621/1747.jpg?hmac=cu15YGotS0gIYdBbR1he5NtBLZAAY6aIY5AbORRAngs",
-    },
-    {
-      src:
-        "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
-    },
-    {
-      src:
-        "https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg",
-    },
+  const btn = [
+    { name: "All", kat: "all" },
+    { name: "Web App", kat: "web-app" },
+    { name: "Mobile App", kat: "mobile-app" },
+    { name: "Template", kat: "template" },
   ];
   const [imgs, setImgs] = useState(stack);
+  const [activeBtn, setActiveBtn] = useState("all");
+
+  const changeList = (data) => {
+    const newList = stack.filter((item) =>
+      data === "all" ? stack : item.kat === data
+    );
+    setImgs(newList);
+    setActiveBtn(data);
+  };
   return (
     <div className="container-content p-55-0 text-center" id="project">
       <Title className="text-bold font-large-xx ">Latest Project</Title>
-      <button onClick={() => setImgs(stack)}>satu</button>
-      <button onClick={() => setImgs(stack1)}>dua</button>
-      <button onClick={() => setImgs(stack2)}>tiga</button>
+      {btn.map((item, i) => {
+        return (
+          <Tabs
+            key={i}
+            name={item.name}
+            onClick={() => changeList(item.kat)}
+            className={
+              activeBtn === item.kat ? "btn-tabs activeBtn" : "btn-tabs"
+            }
+          />
+        );
+      })}
+
+      {/* <button onClick={() => setImgs(stack)}>All</button>
+      <button onClick={() => setImgs(stack1)}>Web Aplication</button>
+      <button onClick={() => setImgs(stack1)}>Template</button>
+      <button onClick={() => setImgs(stack1)}>Mobile App</button> */}
       <div className="image-wrapper">
         <CSSGrid
           component="div"
-          columns={3}
+          columns={4}
           columnWidth={200}
-          gutterWidth={5}
-          gutterHeight={5}
+          gutterWidth={7}
+          gutterHeight={7}
           layout={layout.pinterest}
           duration={500}
           easing="ease-out"
         >
           {imgs.map((item, i) => {
             return (
-              <div key={i} itemHeight={200}>
-                <Image className="img" src={item.src} alt={item.src} />
+              <div className="image-view" key={i} itemHeight={200}>
+                <Image
+                  width={200}
+                  src={item.src}
+                  alt={item.src}
+                  fallback={default_img}
+                />
               </div>
             );
           })}

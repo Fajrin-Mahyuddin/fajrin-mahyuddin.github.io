@@ -9,21 +9,12 @@
   // grid-template-rows: repeat(4, 5vw);
   // grid-gap: 15px;
 
-  div {
-    position: relative;
-    z-index: 98;
-    span {
-      position: absolute;
-      z-index: 990000 !important;
-      background-color: salmon;
-    }
+  .image-view {
     img {
-      width: 200px;
       height: 200px;
       object-fit: cover;
-    }
-    .img {
       border-radius: 10px;
+      cursor: pointer;
     }
     // .box {
     //   width: 100%;

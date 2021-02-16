@@ -11,6 +11,15 @@ import logo_navi from "./logo/my_logo_navi.svg";
 import logo_white from "./logo/my_logo_white.svg";
 import ams from "./projects/ams.png";
 import pabalu from "./projects/pabalu.png";
+import bank_skripsi from "./projects/bank_skripsi.png";
+import evalap from "./projects/evalap.png";
+import ppdb_passikola from "./projects/ppdb_passikola.png";
+import sitinaja from "./projects/sitinaja.png";
+import spkt_barombong from "./projects/spkt_barombong.png";
+import telegraph from "./projects/telegraph.png";
+
+const default_img =
+  "https://www.astralife.co.id/beta/wp-content/uploads/2019/11/default-img.png";
 
 export {
   AboutSvg,
@@ -26,4 +35,11 @@ export {
   bg_about,
   ams,
   pabalu,
+  default_img,
+  bank_skripsi,
+  evalap,
+  ppdb_passikola,
+  sitinaja,
+  spkt_barombong,
+  telegraph,
 };

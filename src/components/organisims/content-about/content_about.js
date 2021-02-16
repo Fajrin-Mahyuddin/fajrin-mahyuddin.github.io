@@ -17,11 +17,22 @@ const ContentAbout = () => {
           praesentium at. Quaerat quia earum doloremque doloribus illum
           architecto consectetur nostrum commodi fuga. Molestiae.
         </Text>
+        <div className="profile-item">
+          Github :{" "}
+          <a href="https://github.com/Fajrin-Mahyuddin">
+            https://github.com/Fajrin-Mahyuddin
+          </a>
+        </div>
+        <div className="profile-item">
+          Linkedin :{" "}
+          <a href="https://www.linkedin.com/in/fajrin-mahyuddin-a65111131/">
+            https://www.linkedin.com/in/fajrin-mahyuddin-a65111131/
+          </a>
+        </div>
         <ContentStack />
-        <button className="primary-btn medium-btn p-1-2 mt-5 mr-1">
-          See Details
+        <button className="danger-btn medium-btn mt-5 p-1-2">
+          Download CV
         </button>
-        <button className="danger-btn medium-btn p-1-2">Download CV</button>
       </div>
     </>
   );
