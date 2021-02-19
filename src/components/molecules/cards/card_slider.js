@@ -8,8 +8,12 @@ const CardSlider = () => {
       <Text className="font-large-xx">
         Create your website and <br /> application here
       </Text>
-      <button className="medium-btn default-btn mr-05">Need a wesite</button>
-      <button className="medium-btn primary-btn ">Hire Me</button>
+      <a
+        href="mailto:fajrin.mahyuddin01@gmail.com?subject=Website Proposal Project.&cc=fajrin.telkom12@gmail.com"
+        className="medium-btn primary-btn"
+      >
+        Need a wesite
+      </a>
     </div>
   );
 };

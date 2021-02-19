@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Title, Image, ContentStack } from "components";
+import { Text, Title, Links, ContentStack } from "components";
 import { idea } from "assets";
 
 const ContentAbout = () => {
@@ -11,12 +11,14 @@ const ContentAbout = () => {
       <div>
         <Title className="text-bold font-large-xx">About Me</Title>
         <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          nihil laborum minus vitae quibusdam deleniti ab voluptatum officiis
-          obcaecati! Sed quos similique fugiat repellat accusantium consectetur
-          praesentium at. Quaerat quia earum doloremque doloribus illum
-          architecto consectetur nostrum commodi fuga. Molestiae.
+          I'm from Majene City and was born in there, now I'm 27 years old. I
+          have passion in programming languages espesially web programming and
+          has 2 years experience work on web application project. Today I work
+          as javascript front end developer at Pallaka studio for a years. But
+          sometimes I provide Back End code using PHP and nodeJS. For more
+          information could be found below :
         </Text>
+        <div className="profile-item">Phone : 085-395-547-094</div>
         <div className="profile-item">
           Github :{" "}
           <a href="https://github.com/Fajrin-Mahyuddin">
@@ -30,9 +32,12 @@ const ContentAbout = () => {
           </a>
         </div>
         <ContentStack />
-        <button className="danger-btn medium-btn mt-5 p-1-2">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1sJBA6Jb_gjX5VrATXe0mS9PkqSB22NhD"
+          className="medium-btn danger-btn mt-2 p-1-2 about-btn"
+        >
           Download CV
-        </button>
+        </a>
       </div>
     </>
   );

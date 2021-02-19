@@ -138,11 +138,17 @@
 .primary-btn {
   color: $white;
   background-color: $primary-color;
+  &:hover {
+    color: $white;
+  }
 }
 
 .danger-btn {
   color: $white;
   background-color: $danger-color;
+  &:hover {
+    color: $white;
+  }
 }
 
 .white {
@@ -177,4 +183,9 @@
   a {
     color: $primary-color;
   }
+}
+
+.about-btn {
+  display: flex;
+  width: fit-content;
 }

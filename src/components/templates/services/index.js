@@ -10,8 +10,8 @@ const Services = () => {
       <div className="container-content text-center p-55-0">
         <Title className="text-bold font-large-xx">Services</Title>
         <Text>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, quis!
-          Excepturi accusamus blanditiis dolorem facilis?
+          Provide two platform using javascript, web development and mobile
+          development.
         </Text>
 
         <Row>
