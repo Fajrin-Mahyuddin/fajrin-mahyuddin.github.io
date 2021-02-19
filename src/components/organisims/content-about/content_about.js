@@ -21,13 +21,16 @@ const ContentAbout = () => {
         <div className="profile-item">Phone : 085-395-547-094</div>
         <div className="profile-item">
           Github :{" "}
-          <a href="https://github.com/Fajrin-Mahyuddin">
+          <a href="https://github.com/Fajrin-Mahyuddin" target="_blank">
             https://github.com/Fajrin-Mahyuddin
           </a>
         </div>
         <div className="profile-item">
           Linkedin :{" "}
-          <a href="https://www.linkedin.com/in/fajrin-mahyuddin-a65111131/">
+          <a
+            href="https://www.linkedin.com/in/fajrin-mahyuddin-a65111131/"
+            target="_blank"
+          >
             https://www.linkedin.com/in/fajrin-mahyuddin-a65111131/
           </a>
         </div>
