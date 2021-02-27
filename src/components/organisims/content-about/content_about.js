@@ -36,7 +36,7 @@ const ContentAbout = () => {
         </div>
         <ContentStack />
         <a
-          href="https://drive.google.com/uc?export=download&id=1sJBA6Jb_gjX5VrATXe0mS9PkqSB22NhD"
+          href="https://drive.google.com/uc?export=download&id=1SJeazrLJQYWha7J2c_9XIFb8VPLgrBry"
           className="medium-btn danger-btn mt-2 p-1-2 about-btn"
         >
           Download CV
