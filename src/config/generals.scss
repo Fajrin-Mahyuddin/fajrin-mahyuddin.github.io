@@ -142,6 +142,15 @@
     color: $white;
   }
 }
+.default-btn {
+  color: $primary-color;
+  background-color: $white;
+  border: 1px solid $primary-color;
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
 
 .danger-btn {
   color: $white;

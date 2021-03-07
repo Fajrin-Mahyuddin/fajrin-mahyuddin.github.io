@@ -5,14 +5,18 @@ const CardSlider = () => {
   return (
     <div className="slider-text">
       <Title className="font-large-xxx text-bold">I'm Fajrin</Title>
-      <Text className="font-large-xx">
-        Create your website and <br /> application here
-      </Text>
+      <Text className="font-large-xx">Front End Developher</Text>
       <a
         href="mailto:fajrin.mahyuddin01@gmail.com?subject=Website Proposal Project.&cc=fajrin.telkom12@gmail.com"
-        className="medium-btn primary-btn"
+        className="medium-btn primary-btn mr-05"
       >
         Need a wesite
+      </a>
+      <a
+        href="mailto:fajrin.mahyuddin01@gmail.com?subject=Hiring Proposal Project.&cc=fajrin.telkom12@gmail.com"
+        className="medium-btn default-btn"
+      >
+        Hire Me
       </a>
     </div>
   );

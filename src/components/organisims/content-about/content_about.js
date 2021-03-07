@@ -12,8 +12,8 @@ const ContentAbout = () => {
         <Title className="text-bold font-large-xx">About Me</Title>
         <Text>
           My name is Fajrin Mahyuddin, 27 years old and I am front end web
-          developher with 2 years experience. I have done several project like
-          web application, web news and landing page from goverment,
+          developher with 2 years experience. I have done several project web
+          application, web news and landing page from any client like goverment,
           organization even personal. As front end developher, javascript become
           my favorite programming language and has been using a few library
           javascript like reactJS, React Native, express, and jquery in my
