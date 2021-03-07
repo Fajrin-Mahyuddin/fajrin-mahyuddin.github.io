@@ -11,12 +11,17 @@ const ContentAbout = () => {
       <div>
         <Title className="text-bold font-large-xx">About Me</Title>
         <Text>
-          I'm from Majene City and was born in there, now I'm 27 years old. I
-          have passion in programming languages espesially web programming and
-          has 2 years experience work on web application project. Today I work
-          as javascript front end developer at Pallaka studio for a years. But
-          sometimes I provide Back End code using PHP and nodeJS. For more
-          information could be found below :
+          My name is Fajrin Mahyuddin, 27 years old and I am front end web
+          developher with 2 years experience. I have done several project like
+          web application, web news and landing page from goverment,
+          organization even personal. As front end developher, javascript become
+          my favorite programming language and has been using a few library
+          javascript like reactJS, React Native, express, and jquery in my
+          project. I provide service web development and my main concern is how
+          to provide good solution according to your goals so it will saving
+          your time and unwanted-future budget. <br />
+          In case you need some request service and offers, I would glad to help
+          you. so feel free to contact me through information below:
         </Text>
         <div className="profile-item">Phone : 085-395-547-094</div>
         <div className="profile-item">
