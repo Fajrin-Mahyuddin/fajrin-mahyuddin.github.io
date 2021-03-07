@@ -13,7 +13,7 @@ const CardSlider = () => {
         Need a wesite
       </a>
       <a
-        href="mailto:fajrin.mahyuddin01@gmail.com?subject=Hiring Proposal Project.&cc=fajrin.telkom12@gmail.com"
+        href="mailto:fajrin.mahyuddin01@gmail.com?subject=Hiring Proposal.&cc=fajrin.telkom12@gmail.com"
         className="medium-btn default-btn"
       >
         Hire Me
