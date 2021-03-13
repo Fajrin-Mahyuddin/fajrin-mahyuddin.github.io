@@ -10,20 +10,21 @@ const ContentAbout = () => {
       </div>
       <div>
         <Title className="text-bold font-large-xx">About Me</Title>
-        <Text>
+        <Text className="justify-text">
           My name is Fajrin Mahyuddin, 27 years old and I have been working as
-          front end web developher for 2 years. I have done several project web
+          front end web developher for a year. I have done several project web
           application, web news and landing page from some client like
           goverment, organization even personal. As front end developher,
           javascript become my favorite programming language and has been using
           a few library javascript like reactJS, React Native, express, and
-          jquery in my project. I provide service web development and my main
+          jquery in my project. I provide service web development with main
           concern is how to provide good solution according to your goals so it
           will saving your time and unwanted-future budget. <br />
           In case you need some request service and offers, I would glad to help
           you. so feel free to contact me through information below:
         </Text>
         <div className="profile-item">Phone : 085-395-547-094</div>
+        <div className="profile-item">Mail : fajrin-mahyuddin@icloud.com</div>
         <div className="profile-item">
           Github :{" "}
           <a href="https://github.com/Fajrin-Mahyuddin" target="_blank">
