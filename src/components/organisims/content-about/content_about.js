@@ -24,7 +24,7 @@ const ContentAbout = () => {
           you. so feel free to contact me through information below:
         </Text>
         <div className="profile-item">Phone : 085-395-547-094</div>
-        <div className="profile-item">Mail : fajrin-mahyuddin@icloud.com</div>
+        <div className="profile-item">Mail : fajrin.mahyuddin@icloud.com</div>
         <div className="profile-item">
           Github :{" "}
           <a href="https://github.com/Fajrin-Mahyuddin" target="_blank">
