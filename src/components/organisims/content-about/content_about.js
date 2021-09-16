@@ -10,7 +10,7 @@ const ContentAbout = () => {
       </div>
       <div>
         <Title className="text-bold text-center pt-55 font-large-xx">About Me</Title>
-        <Text className="justify-text">
+        <Text className="justify-text f-16">
           My name is Fajrin Mahyuddin, 27 years old and I have been working as
           front end web developher for two year. I have done several project web
           application, web news and landing page from some client like

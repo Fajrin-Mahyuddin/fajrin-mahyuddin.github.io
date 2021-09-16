@@ -5,7 +5,7 @@ import { Image } from "components";
 
 const About = () => {
   return (
-    <div className="p-5-0 bg-about" id="about">
+    <div className="p-5-0 container-content bg-about" id="about">
       <div className="content align-center">
         <ContentAbout />
       </div>

@@ -58,7 +58,7 @@ const LatestProject = () => {
   ];
   const [imgs, setImgs] = useState(stack);
   const [activeBtn, setActiveBtn] = useState("all");
-  const Grid = makeResponsive(CSSGrid, { maxWidth: 1400, minPadding: 5 })
+  const Grid = makeResponsive(CSSGrid, { maxWidth: 1200, minPadding: 15 })
   const changeList = (data) => {
     const newList = stack.filter((item) =>
       data === "all" ? stack : item.kat === data
