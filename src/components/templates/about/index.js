@@ -10,7 +10,7 @@ const About = () => {
         <ContentAbout />
       </div>
       <Image
-        className="mr-3"
+        className="mr-3 batik"
         // className="batik"
         src={bg_about}
         alt="https://undraw.co"

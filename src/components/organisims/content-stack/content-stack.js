@@ -1,5 +1,5 @@
 import React from "react";
-import { Title, Text, Label } from "components";
+import { Label } from "components";
 
 const ContentStack = () => {
   const stack = ["ReactJS", "React Native", "Express", "Laravel", "Rest-API"];
@@ -9,7 +9,7 @@ const ContentStack = () => {
       Skills:
       {stack.map((item, i) => {
         return (
-          <Label key={i} className="ml-05">
+          <Label key={i} className="ml-05 mb-05">
             {item}
           </Label>
         );

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Title, Tabs } from "components";
-import { layout, CSSGrid } from "react-stonecutter";
+import { layout, CSSGrid, makeResponsive, measureItems } from "react-stonecutter";
 import {
   ams,
   bank_skripsi,
@@ -58,7 +58,7 @@ const LatestProject = () => {
   ];
   const [imgs, setImgs] = useState(stack);
   const [activeBtn, setActiveBtn] = useState("all");
-
+  const Grid = makeResponsive(CSSGrid, { maxWidth: 1400, minPadding: 5 })
   const changeList = (data) => {
     const newList = stack.filter((item) =>
       data === "all" ? stack : item.kat === data
@@ -67,7 +67,7 @@ const LatestProject = () => {
     setActiveBtn(data);
   };
   return (
-    <div className="container-content p-55-0 text-center" id="project">
+    <div className="p-55-0 text-center" id="project">
       <Title className="text-bold font-large-xx ">Latest Project</Title>
       {btn.map((item, i) => {
         return (
@@ -87,7 +87,7 @@ const LatestProject = () => {
       <button onClick={() => setImgs(stack1)}>Template</button>
       <button onClick={() => setImgs(stack1)}>Mobile App</button> */}
       <div className="image-wrapper">
-        <CSSGrid
+        <Grid
           component="div"
           columns={4}
           columnWidth={200}
@@ -109,7 +109,7 @@ const LatestProject = () => {
               </div>
             );
           })}
-        </CSSGrid>
+        </Grid>
       </div>
     </div>
   );

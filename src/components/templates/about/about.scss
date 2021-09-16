@@ -13,10 +13,18 @@
     }
   }
   .batik {
-    position: absolute;
-    z-index: 1;
-    width: 25vw;
-    bottom: 10vh;
-    right: 10vw;
+   display: none; 
   }
+}
+
+@media screen and (min-width: 500px) {
+  .bg-about {
+    .batik {
+      position: absolute;
+      z-index: 1;
+      width: 25vw;
+      bottom: 10vh;
+      right: 10vw;
+    }
+  } 
 }
