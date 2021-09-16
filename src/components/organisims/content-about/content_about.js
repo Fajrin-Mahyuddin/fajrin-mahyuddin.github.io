@@ -34,10 +34,10 @@ const ContentAbout = () => {
         <div className="profile-item">
           Linkedin :{" "}
           <a
-            href="https://www.linkedin.com/in/fajrin-mahyuddin-a65111131/"
+            href="https://www.linkedin.com/in/fajrin-mahyuddin-a65111131"
             target="_blank"
           >
-            https://www.linkedin.com/in/fajrin-mahyuddin-a65111131/
+            https://www.linkedin.com/in/fajrin-mahyuddin-a65111131
           </a>
         </div>
         <ContentStack />
