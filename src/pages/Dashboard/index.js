@@ -17,7 +17,7 @@ const Dashboard = () => {
       <Sliders />
       <About />
       <Services />
-      <LatestProject />
+      {/* <LatestProject /> */}
       <LinkProjects />
     </Layouts>
   );

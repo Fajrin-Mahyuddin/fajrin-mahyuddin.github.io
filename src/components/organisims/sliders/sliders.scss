@@ -1,24 +1,17 @@
 .slider-container {
-  // margin-top: 100px;
   width: 100%;
   height: 100vh;
-  // padding: 50px 0;
   background-color: $white;
   position: relative;
   z-index: 1;
   .slide-bg {
-    // margin-top: 35px;
-
     .gunung {
       position: absolute;
-      // background-color: red;
       width: 100%;
-      // height: 100vh;
       bottom: -2px;
-      // object-fit: cover;
     }
     .matahari {
-      width: 10%;
+      width: 20%;
       position: absolute;
       left: 55vw;
       top: 25vh;
@@ -33,11 +26,10 @@
   .absolute-content {
     position: absolute;
     z-index: 2;
-    top: -15%;
-    left: -10%;
+    top: 45%;
+    left: 0;
     right: 0;
-    bottom: 0;
-    align-items: center;
+    text-align: center;
     // .slider-text {
     // button {
     //   padding: 5px 15px;
@@ -49,4 +41,39 @@
     // }
     // }
   }
+} 
+@media screen and (min-width: 500px) {
+  .slider-container {
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    position: relative;
+    z-index: 1;
+    .slide-bg {
+      .gunung {
+        position: absolute;
+        width: 100%;
+        bottom: -2px;
+      }
+      .matahari {
+        width: 10%;
+        position: absolute;
+        left: 55vw;
+        top: 25vh;
+      }
+      .balon-udara {
+        width: 10%;
+        position: absolute;
+        left: 80vw;
+        top: 20vh;
+      }
+    }
+    .absolute-content {
+        top: 30%;
+        left: 10%;
+        text-align: left;
+      // left: -10%;
+    }
+  } 
 }
+
