@@ -9,7 +9,7 @@ const ContentAbout = () => {
         {/* <Image className="mr-3" src={idea} alt="https://undraw.co" /> */}
       </div>
       <div>
-        <Title className="text-bold font-large-xx">About Me</Title>
+        <Title className="text-bold text-center pt-55 font-large-xx">About Me</Title>
         <Text className="justify-text">
           My name is Fajrin Mahyuddin, 27 years old and I have been working as
           front end web developher for two year. I have done several project web
