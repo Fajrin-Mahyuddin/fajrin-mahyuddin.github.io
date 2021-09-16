@@ -7,6 +7,7 @@ import {
   StackTemp,
   LatestProject,
 } from "components";
+import LinkProjects from "components/organisims/latest-project/link-projects";
 
 const Dashboard = () => {
   // console.log("width of scrolling", window.pageXOffset);
@@ -17,6 +18,7 @@ const Dashboard = () => {
       <About />
       <Services />
       <LatestProject />
+      <LinkProjects />
     </Layouts>
   );
 };

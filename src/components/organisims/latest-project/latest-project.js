@@ -11,11 +11,16 @@ import {
   sitinaja,
   spkt_barombong,
   telegraph,
+  CoffeeApp
 } from "assets";
 import { Image } from "antd";
 
 const LatestProject = () => {
   const stack = [
+    {
+      src: CoffeeApp,
+      kat: "web-app",
+    },
     {
       src: ams,
       kat: "web-app",
@@ -38,10 +43,6 @@ const LatestProject = () => {
     },
     {
       src: sitinaja,
-      kat: "web-app",
-    },
-    {
-      src: spkt_barombong,
       kat: "web-app",
     },
     {

@@ -12,12 +12,12 @@ const ContentAbout = () => {
         <Title className="text-bold font-large-xx">About Me</Title>
         <Text className="justify-text">
           My name is Fajrin Mahyuddin, 27 years old and I have been working as
-          front end web developher for a year. I have done several project web
+          front end web developher for two year. I have done several project web
           application, web news and landing page from some client like
           goverment, organization even personal. As front end developher,
           javascript become my favorite programming language and has been using
-          a few library javascript like reactJS, React Native, express, and
-          jquery in my project. I provide service web development with main
+          a few library javascript like reactJS, React Native, jquery, even
+          express in my project. I provide service web development with main
           concern is how to provide good solution according to your goals so it
           will saving your time and unwanted-future budget. <br />
           In case you need some request service and offers, I would glad to help

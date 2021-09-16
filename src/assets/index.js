@@ -17,6 +17,7 @@ import ppdb_passikola from "./projects/ppdb_passikola.png";
 import sitinaja from "./projects/sitinaja.png";
 import spkt_barombong from "./projects/spkt_barombong.png";
 import telegraph from "./projects/telegraph.png";
+import CoffeeApp from './projects/coffee-app.png';
 
 const default_img =
   "https://www.astralife.co.id/beta/wp-content/uploads/2019/11/default-img.png";
@@ -42,4 +43,5 @@ export {
   sitinaja,
   spkt_barombong,
   telegraph,
+  CoffeeApp
 };
