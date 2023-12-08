@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8252e01fd36c06b144156816afd5db77",
+    "revision": "0f452c7ff3dda858f87f026a3af0fcc4",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.220ccb42.chunk.css"
   },
   {
-    "revision": "db081e5a9d36bbadb916",
-    "url": "/static/css/main.4003553e.chunk.css"
+    "revision": "d75e1cb3b0c89ecc4b9e",
+    "url": "/static/css/main.c67aa14b.chunk.css"
   },
   {
     "revision": "75bfc80798eb71c0566a",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.8bf493f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "db081e5a9d36bbadb916",
-    "url": "/static/js/main.ea32a08d.chunk.js"
+    "revision": "d75e1cb3b0c89ecc4b9e",
+    "url": "/static/js/main.64db6604.chunk.js"
   },
   {
     "revision": "efe25b4b8d1f7af9da4b",
@@ -32,28 +32,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ME.4558462e.jpg"
   },
   {
-    "revision": "d14e77ab563ca7af9106ab765abfd2b6",
-    "url": "/static/media/about.d14e77ab.svg"
+    "revision": "68d5019a89701dc47467117a1e92823c",
+    "url": "/static/media/about.68d5019a.svg"
   },
   {
     "revision": "db3463b0679de00fd614f78e0cdc92ce",
     "url": "/static/media/ams.db3463b0.png"
   },
   {
-    "revision": "901fe7ffbcc1cbe14a280b52ddab827f",
-    "url": "/static/media/balon_udara.901fe7ff.svg"
+    "revision": "e6ace8846428f16445bd4976b40996c0",
+    "url": "/static/media/balon_udara.e6ace884.svg"
   },
   {
     "revision": "133a3469cd55df0e44761426ec426563",
     "url": "/static/media/bank_skripsi.133a3469.png"
   },
   {
-    "revision": "d702c8b22955b1caeb8da6fcc041a358",
-    "url": "/static/media/batik.d702c8b2.svg"
+    "revision": "207740a5f8744dfe6466a3a19ef02589",
+    "url": "/static/media/batik.207740a5.svg"
   },
   {
-    "revision": "fb504b22c84660feba49e8129a4bae16",
-    "url": "/static/media/bg_about.fb504b22.svg"
+    "revision": "12c678915610b7ceaa5eb2a0e57ae248",
+    "url": "/static/media/bg_about.12c67891.svg"
   },
   {
     "revision": "a1c54e03a5f6534574da33799ff5f78c",
@@ -64,28 +64,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/evalap.679fab2b.png"
   },
   {
-    "revision": "8e7ea245957c7ca55ea92c38a61c61eb",
-    "url": "/static/media/gunung.8e7ea245.svg"
+    "revision": "55f140ad2cd7682c851f19cb9d582135",
+    "url": "/static/media/gunung.55f140ad.svg"
   },
   {
-    "revision": "d8e2f3e27d81cf8e06cf81e7174b5fcd",
-    "url": "/static/media/human.d8e2f3e2.svg"
+    "revision": "19defac686a4739f728516e24cb075da",
+    "url": "/static/media/human.19defac6.svg"
   },
   {
-    "revision": "77d7b85ed860ac711e14d58aa5ba48c3",
-    "url": "/static/media/idea.77d7b85e.svg"
+    "revision": "3e2239fee22c57493e8496a1cdaa0e38",
+    "url": "/static/media/idea.3e2239fe.svg"
   },
   {
-    "revision": "dbefa400efc12ac621f73f43c5e73aed",
-    "url": "/static/media/matahari.dbefa400.svg"
+    "revision": "461b45da21cb184e1a7e684fe9383adf",
+    "url": "/static/media/matahari.461b45da.svg"
   },
   {
-    "revision": "4ebc39a1d2d4cef1ad474d54bb6d1d06",
-    "url": "/static/media/my_logo_navi.4ebc39a1.svg"
+    "revision": "99a10c21a9f30ca6b3d4933a1e8fa332",
+    "url": "/static/media/my_logo_navi.99a10c21.svg"
   },
   {
-    "revision": "c12d84ca27283b43662ec544dfb2539f",
-    "url": "/static/media/my_logo_white.c12d84ca.svg"
+    "revision": "42460293f71497c13c5b213773362ece",
+    "url": "/static/media/my_logo_white.42460293.svg"
   },
   {
     "revision": "160d0b66f9b1f6c2b34fd7f2268877e0",
@@ -96,12 +96,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ppdb_passikola.67b3e173.png"
   },
   {
-    "revision": "f99e1e0d23478c94ce3c7c7af3ed36f2",
-    "url": "/static/media/service-01.f99e1e0d.svg"
+    "revision": "dbf9e92947ea9675eed079566326f55b",
+    "url": "/static/media/service-01.dbf9e929.svg"
   },
   {
-    "revision": "7771dfee89142ca58acd3588887db6b6",
-    "url": "/static/media/service-02.7771dfee.svg"
+    "revision": "1fd8133d7d3ccc4181e13777f16f6803",
+    "url": "/static/media/service-02.1fd8133d.svg"
   },
   {
     "revision": "11ca44351bf71d23e27af7ce6cc135e6",
