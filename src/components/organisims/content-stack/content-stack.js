@@ -2,7 +2,16 @@ import React from "react";
 import { Label } from "components";
 
 const ContentStack = () => {
-  const stack = ["ReactJS", "React Native", "Express", "Laravel", "Rest-API"];
+  const stack = [
+    "ReactJS",
+    "React Native",
+    "Express",
+    "Laravel",
+    "Rest-API",
+    "GraphQL",
+    "NextJS",
+    "Typescript",
+  ];
   return (
     <div>
       {" "}

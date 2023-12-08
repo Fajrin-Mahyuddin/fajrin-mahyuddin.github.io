@@ -9,11 +9,13 @@ const ContentAbout = () => {
         {/* <Image className="mr-3" src={idea} alt="https://undraw.co" /> */}
       </div>
       <div>
-        <Title className="text-bold text-center pt-55 font-large-xx">About Me</Title>
+        <Title className="text-bold text-center pt-55 font-large-xx">
+          About Me
+        </Title>
         <Text className="justify-text f-16">
-          My name is Fajrin Mahyuddin, 27 years old and I have been working as
-          front end web developher for two year. I have done several project web
-          application, web news and landing page from some client like
+          My name is Fajrin Mahyuddin, 29 years old and I have been working as
+          front end web developher for four year. I have done several project
+          web application, web news and landing page from some client like
           goverment, organization even personal. As front end developher,
           javascript become my favorite programming language and has been using
           a few library javascript like reactJS, React Native, jquery, even
