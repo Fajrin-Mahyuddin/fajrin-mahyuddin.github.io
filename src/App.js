@@ -1,11 +1,35 @@
 import React from "react";
-import "antd/dist/antd.css";
-import "./App.css";
-import "./config/index.scss";
-import Navigate from "routers/Navigate";
+// import "./App.css";
+import "./assets/fonts/style.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Dashboard } from "pages";
+import { ChakraProvider } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
+
+const theme = extendTheme({
+  fonts: {
+    heading: `'Caros', 'Open Sans', sans-serif`,
+    body: `'Caros', sans-serif`,
+  },
+});
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Dashboard />,
+  },
+  {
+    path: "/profile",
+    element: <div>profile</div>,
+  },
+]);
 
 function App() {
-  return <Navigate />;
+  return (
+    <ChakraProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ChakraProvider>
+  );
 }
 
 export default App;
