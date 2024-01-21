@@ -1,108 +1,47 @@
-import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
+import { WorkExperienceItem } from "components/molecules";
 import { ContainerMaxWidth } from "components/templates";
 import React from "react";
+
+const experiences = [
+  {
+    company: "Zodiac Solution, PTE Ltd",
+    period: "Okt 2021 - Preset",
+    position: "Fulltime Remote Frontend Developer",
+    color: "#286F6C",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br /> <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ",
+  },
+  {
+    company: "Pallaka Studio",
+    period: "Sep 2019 - Okt 2021",
+    position: "Fulltime Remote Frontend Developer",
+    color: "#E6AB35",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br /> <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ",
+  },
+  {
+    company: "PT Cipta Sejati Revolution",
+    period: "Jan 2016 - Aug 2016",
+    position: "Fullstack Developer",
+    color: "#F26440",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br /> <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ",
+  },
+];
 
 const WorkExperience = () => {
   return (
     <Box bgColor="#f8f7f1">
       <ContainerMaxWidth>
-        <Box>
+        <Flex py="3%" flexDir="column" gap={12}>
           <Heading textAlign="center">Work Experience</Heading>
-          <Grid
-            className="grid_"
-            pos="relative"
-            gridTemplateColumns="repeat(3, auto)"
-            gridTemplateAreas={[
-              `"second third third" "second first first"`,
-              `"second third third" "second first first"`,
-              `"first second third"`,
-            ]}
-            gap="10px"
-          >
-            <Box bg="greenyellow" gridArea="first" pb="20px">
-              <Heading>Zodiac Solution, PTE Ltd</Heading>
-              <Text>Okt 2021 - Present</Text>
-            </Box>
-            <Box gridArea="second" pos="relative">
-              <Box
-                width="45px"
-                height="45px"
-                borderRadius="45px"
-                bgColor="saddlebrown"
-                padding="10px"
-                border="5px solid #000"
-                zIndex={1}
-                pos="relative"
-              />
-              <Box
-                pos="absolute"
-                width="5px"
-                height="100%"
-                bgColor="red"
-                top="0"
-                left="50%"
-                bottom="0"
-                transform="translateX(-50%)"
-              />
-            </Box>
-            <Box gridArea="third" bg="saddlebrown" pb="20px">
-              <Heading>Frontend Developer</Heading>
-              <Text>
-                lorem1Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Box>
-          </Grid>
-          <Grid
-            className="grid_"
-            pos="relative"
-            gridTemplateColumns="repeat(3, auto)"
-            gridTemplateAreas={[
-              `"second third third" "second first first"`,
-              `"second third third" "second first first"`,
-              `"first second third"`,
-            ]}
-            gap="10px"
-          >
-            <Box bg="greenyellow" gridArea="first" pb="20px">
-              <Heading>Zodiac Solution, PTE Ltd</Heading>
-              <Text>Okt 2021 - Present</Text>
-            </Box>
-            <Box gridArea="second" pos="relative">
-              <Box
-                width="45px"
-                height="45px"
-                borderRadius="45px"
-                bgColor="saddlebrown"
-                padding="10px"
-                border="5px solid #000"
-                zIndex={1}
-                pos="relative"
-              />
-              <Box
-                pos="absolute"
-                width="5px"
-                height="100%"
-                bgColor="red"
-                top="0"
-                left="50%"
-                bottom="0"
-                transform="translateX(-50%)"
-              />
-            </Box>
-            <Box gridArea="third" bg="saddlebrown" pb="20px">
-              <Heading>Frontend Developer</Heading>
-              <Text>
-                lorem1Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Box>
-          </Grid>
-        </Box>
+          <Box>
+            {experiences.map((item, i) => {
+              return <WorkExperienceItem key={i} {...item} />;
+            })}
+          </Box>
+        </Flex>
       </ContainerMaxWidth>
     </Box>
   );

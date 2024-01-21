@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Layouts, HeroSection, AboutSection, WorkExperience } from "components";
+import {
+  Layouts,
+  HeroSection,
+  AboutSection,
+  WorkExperience,
+  ProjectSeciton,
+} from "components";
 
 const Dashboard = () => {
   return (
@@ -8,6 +14,7 @@ const Dashboard = () => {
       <HeroSection />
       <AboutSection />
       <WorkExperience />
+      <ProjectSeciton />
     </Layouts>
   );
 };

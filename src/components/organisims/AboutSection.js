@@ -5,7 +5,7 @@ import {
   MobileIcon,
   SkillsBoard,
 } from "components";
-import { Box, Flex, Grid, Heading, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 const AboutSection = () => {
   return (
