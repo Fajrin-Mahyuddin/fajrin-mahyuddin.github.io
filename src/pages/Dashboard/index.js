@@ -6,6 +6,7 @@ import {
   AboutSection,
   WorkExperience,
   ProjectSeciton,
+  ContactSection,
 } from "components";
 
 const Dashboard = () => {
@@ -15,6 +16,7 @@ const Dashboard = () => {
       <AboutSection />
       <WorkExperience />
       <ProjectSeciton />
+      <ContactSection />
     </Layouts>
   );
 };
