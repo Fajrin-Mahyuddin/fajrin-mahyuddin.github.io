@@ -1,5 +1,5 @@
 import React from "react";
-// import "./App.css";
+import "./App.css";
 import "./assets/fonts/style.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Dashboard } from "pages";

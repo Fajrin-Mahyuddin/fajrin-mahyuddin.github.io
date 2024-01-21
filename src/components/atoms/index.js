@@ -1,8 +1,5 @@
-import Links from "./links/links";
-import Image from "./image/image";
-import Text from "./text";
-import Title from "./title/title";
-import Tags from "./tags/tags";
-import Label from "./label/label";
+import CodeIcon from "./icons/CodeIcon";
+import MedalIcon from "./icons/MedalIcon";
+import MobileIcon from "./icons/MobileIcon";
 
-export { Links, Image, Text, Title, Tags, Label };
+export { CodeIcon, MedalIcon, MobileIcon };

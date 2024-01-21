@@ -8,7 +8,7 @@ const Layouts = ({ children }) => {
   return (
     <main>
       <Navbar />
-      <Box bg="salmon">{children}</Box>
+      <Box>{children}</Box>
     </main>
   );
 };
@@ -23,7 +23,7 @@ const Navbar = () => {
       }}
     >
       <ContainerMaxWidth>
-        <Flex justifyContent="space-between" p="20px">
+        <Flex justifyContent="space-between" py="20px">
           <NavLink as={Link} to="/">
             <Image src={logo} alt="new logo" />
           </NavLink>
