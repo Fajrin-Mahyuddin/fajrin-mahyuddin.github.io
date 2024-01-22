@@ -19,7 +19,7 @@ const WorkExperienceItem = ({
       ]}
       gap="20px"
     >
-      <Box gridArea="first" pb="20px">
+      <Box gridArea="first" pt="10px" pb="20px">
         <Heading fontSize="1.5rem">{company}</Heading>
         <Text fontSize="1rem">{period}</Text>
       </Box>
@@ -58,7 +58,7 @@ const WorkExperienceItem = ({
           transform="translateX(-50%)"
         />
       </Flex>
-      <Box gridArea="third" pb="20px">
+      <Box gridArea="third" pt="10px" pb="30px">
         <Heading fontSize="1.5rem" mb="20px">
           {position}
         </Heading>

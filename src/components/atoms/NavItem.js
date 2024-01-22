@@ -1,6 +1,7 @@
 import React from "react";
 import { Link as NavLink } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const NavItem = ({ label, path }) => {
   return (
@@ -11,6 +12,9 @@ const NavItem = ({ label, path }) => {
       _hover={{ color: "#E6AB35" }}
       as={Link}
       to={path}
+      smooth={true}
+      spy={true}
+      duration={700}
     >
       {label}
     </NavLink>

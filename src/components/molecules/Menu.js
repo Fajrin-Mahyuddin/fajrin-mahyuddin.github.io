@@ -6,16 +6,16 @@ const Menu = () => {
   return (
     <Flex alignItems="center" gap={10}>
       <Box>
-        <NavItem to="/about" label="About" />
+        <NavItem path="about" label="About" />
       </Box>
       <Box>
-        <NavItem to="/experience" label="Experience" />
+        <NavItem path="work" label="Experience" />
       </Box>
       <Box>
-        <NavItem to="/project" label="Project" />
+        <NavItem path="project" label="Project" />
       </Box>
       <Box>
-        <NavItem to="/contact" label="Contact" />
+        <NavItem path="contact" label="Contact" />
       </Box>
     </Flex>
   );

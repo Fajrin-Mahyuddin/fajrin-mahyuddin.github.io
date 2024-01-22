@@ -18,7 +18,7 @@ import { ContainerMaxWidth } from "components";
 
 const HeroSection = () => {
   return (
-    <Box as="section" backgroundColor="#F8F7F1" width="100%">
+    <Box as="section" id="home" backgroundColor="#F8F7F1" width="100%">
       <ContainerMaxWidth>
         <Center height="100vh" gap="10%">
           <Box width="400px">
@@ -43,25 +43,32 @@ const HeroSection = () => {
                 bgColor="#F26440"
                 color="#fff"
                 _hover={{}}
+                _active={{}}
               >
                 Download CV
               </Button>
               <Button
+                as="a"
                 minW="150px"
                 fontSize="18px"
                 fontWeight="400"
                 bgColor="#E6AB35"
                 color="#fff"
                 _hover={{}}
+                _active={{}}
+                href="mailto:fajrin.mahyuddin01@gmail.com"
               >
                 Hire me
               </Button>
             </HStack>
             <HStack>
-              <Link href="/linkedin">
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/in/fajrin-mahyuddin"
+              >
                 <Image src={linkedin} alt="linkedin url" />
               </Link>
-              <Link href="/git">
+              <Link target="_blank" href="https://github.com/Fajrin-Mahyuddin">
                 <Image src={git} alt="git url" />
               </Link>
             </HStack>

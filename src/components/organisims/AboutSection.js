@@ -7,38 +7,64 @@ import {
 } from "components";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
+const skills = [
+  {
+    skill: "Frontend Development",
+    icon: CodeIcon,
+    color: "#286F6C",
+    stack: [
+      "Javascript",
+      "NextJS",
+      "ReactJS",
+      "Typescript",
+      "Git",
+      "Css,",
+      "Svelte",
+      "Sass / Less / Scss",
+      "Supabase",
+      "Styled Component",
+      "Firebase",
+      "InertiaJS",
+    ],
+  },
+  {
+    skill: "Backend Development",
+    icon: CodeIcon,
+    color: "#E6AB35",
+    stack: ["NodeJS", "ExpressJS", "Laravel", "RestAPI", "GraphQL", "MySQL"],
+  },
+  {
+    skill: "Mobile Development",
+    icon: MobileIcon,
+    color: "#E6AB35",
+    stack: ["React Native"],
+  },
+];
+
 const AboutSection = () => {
   return (
-    <Box as="section">
+    <Box as="section" id="about">
       <ContainerMaxWidth>
-        <Flex my="5%" gap="5">
+        <Flex py="5%" gap="5">
           <Box flex="1 1 0px" padding="10px">
-            <SkillsBoard icon={<CodeIcon />} label="Frontedn Developer" />
-            <SkillsBoard
-              icon={<CodeIcon bgIcon="#e6ab35" />}
-              label="Backend Developer"
-            />
-            <SkillsBoard
-              icon={<MobileIcon bgIcon="#e6ab35" />}
-              label="Backend Developer"
-            />
+            {skills.map((item, i) => {
+              return <SkillsBoard {...item} />;
+            })}
           </Box>
           <Box flex="1 1 0px" padding="0 10px">
             <Heading mb="20px">About Me</Heading>
-            <Text lineHeight="2">
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
+            <Text lineHeight="2" fontSize="1.2rem">
+              I am a Frontend Developer based in West Sulawesi. I have been
+              working as a frontend developer for over 4 years, using JavaScript
+              to create web UIs. I am excited to experiment with new UI designs
+              and learn new technologies. Building UIs with different
+              technologies is challenging, but it helps me enhance my skills.
             </Text>
             <br />
-            <Text lineHeight="2">
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
+            <Text lineHeight="2" fontSize="1.2rem">
+              I love working with both teams and individuals, as I am passionate
+              about contributing ideas to our projects and enjoy sharing new
+              things with others.
             </Text>
           </Box>
         </Flex>

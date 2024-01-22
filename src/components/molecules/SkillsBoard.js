@@ -1,8 +1,17 @@
-import { HStack, Text, Grid, GridItem, Box, Flex } from "@chakra-ui/react";
+import {
+  HStack,
+  Text,
+  Grid,
+  GridItem,
+  Box,
+  Flex,
+  Heading,
+} from "@chakra-ui/react";
 import { MedalIcon } from "components";
 import React from "react";
 
-const SkillsBoard = ({ label, icon }) => {
+const SkillsBoard = ({ skill, icon, color, stack }) => {
+  const Ico = icon;
   return (
     <Box mb="30px">
       <HStack
@@ -13,11 +22,11 @@ const SkillsBoard = ({ label, icon }) => {
         fontSize="1.15rem"
         fontWeight="bold"
       >
-        {icon}
-        <Text>{label}</Text>
+        <Ico bgIcon={color} />
+        <Heading fontSize="1.2rem">{skill}</Heading>
       </HStack>
-      <Grid templateColumns="repeat(3, 1fr)" gap="20px" mt="20px">
-        {Array.from({ length: 5 }).map((_, i) => {
+      <Grid templateColumns="repeat(3, auto)" gap="10px" mt="20px">
+        {stack.map((item, i) => {
           return (
             <GridItem
               key={i}
@@ -27,7 +36,7 @@ const SkillsBoard = ({ label, icon }) => {
               gap="10px"
             >
               <MedalIcon />
-              <Text>Javascript</Text>
+              <Text>{item}</Text>
             </GridItem>
           );
         })}

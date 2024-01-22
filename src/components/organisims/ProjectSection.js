@@ -6,7 +6,7 @@ import project_two from "assets/images/project-2.png";
 
 const ProjectSeciton = () => {
   return (
-    <Box>
+    <Box as="section" id="project" minH="80vh">
       <ContainerMaxWidth>
         <Flex py="3%" gap={12} flexDir="column">
           <Box textAlign="center">
