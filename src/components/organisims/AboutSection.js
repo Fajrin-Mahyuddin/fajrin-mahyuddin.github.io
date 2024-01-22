@@ -18,12 +18,12 @@ const skills = [
       "ReactJS",
       "Typescript",
       "Git",
-      "Css,",
-      "Svelte",
+      "Firebase",
       "Sass / Less / Scss",
+      "Svelte",
       "Supabase",
       "Styled Component",
-      "Firebase",
+      "Css",
       "InertiaJS",
     ],
   },
@@ -45,14 +45,20 @@ const AboutSection = () => {
   return (
     <Box as="section" id="about">
       <ContainerMaxWidth>
-        <Flex py="5%" gap="5">
+        <Flex
+          py="5%"
+          gap="5"
+          flexDir={["column-reverse", "column-reverse", "row"]}
+        >
           <Box flex="1 1 0px" padding="10px">
             {skills.map((item, i) => {
-              return <SkillsBoard {...item} />;
+              return <SkillsBoard key={i} {...item} />;
             })}
           </Box>
           <Box flex="1 1 0px" padding="0 10px">
-            <Heading mb="20px">About Me</Heading>
+            <Heading mb="20px" textAlign={["center", "center", "left"]}>
+              About Me
+            </Heading>
             <Text lineHeight="2" fontSize="1.2rem">
               I am a Frontend Developer based in West Sulawesi. I have been
               working as a frontend developer for over 4 years, using JavaScript

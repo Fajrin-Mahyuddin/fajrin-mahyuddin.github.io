@@ -3,6 +3,7 @@ import WorkExperience from "./WorkExperience";
 import AboutSection from "./AboutSection";
 import ProjectSeciton from "./ProjectSection";
 import ContactSection from "./ContactSection";
+import Navbar from "./Navbar";
 
 export {
   HeroSection,
@@ -10,4 +11,5 @@ export {
   AboutSection,
   ProjectSeciton,
   ContactSection,
+  Navbar,
 };

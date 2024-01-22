@@ -5,5 +5,17 @@ import PhoneIcon from "./icons/PhoneIcon";
 import MailIcon from "./icons/MailIcon";
 import XIcon from "./icons/XIcon";
 import NavItem from "./NavItem";
+import HamburgerIcon from "./icons/Hamburger";
+import CloseIcon from "./icons/CloseIcon";
 
-export { CodeIcon, MedalIcon, MobileIcon, PhoneIcon, MailIcon, XIcon, NavItem };
+export {
+  CodeIcon,
+  MedalIcon,
+  MobileIcon,
+  PhoneIcon,
+  MailIcon,
+  XIcon,
+  NavItem,
+  HamburgerIcon,
+  CloseIcon,
+};

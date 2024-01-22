@@ -82,9 +82,7 @@ const ContactSection = () => {
                   &copy; {new Date().getFullYear()}
                 </Text>
               </HStack>
-              <Box>
-                <Menu />
-              </Box>
+              <Box>{/* <Menu /> */}</Box>
             </HStack>
           </Box>
         </Flex>

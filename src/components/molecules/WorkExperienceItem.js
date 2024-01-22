@@ -58,7 +58,11 @@ const WorkExperienceItem = ({
           transform="translateX(-50%)"
         />
       </Flex>
-      <Box gridArea="third" pt="10px" pb="30px">
+      <Box
+        gridArea="third"
+        pt={["0", "0", "10px"]}
+        pb={["10px", "10px", "30px"]}
+      >
         <Heading fontSize="1.5rem" mb="20px">
           {position}
         </Heading>

@@ -18,14 +18,20 @@ import { ContainerMaxWidth } from "components";
 
 const HeroSection = () => {
   return (
-    <Box as="section" id="home" backgroundColor="#F8F7F1" width="100%">
+    <Center
+      as="section"
+      width="100vw"
+      height="100vh"
+      id="home"
+      backgroundColor="#F8F7F1"
+    >
       <ContainerMaxWidth>
-        <Center height="100vh" gap="10%">
-          <Box width="400px">
+        <Center gap="10%" flexDir={["column", "column", "row"]}>
+          <Box width={["65%", "65%", "400px"]}>
             <Image src={me} alt="profile" />
           </Box>
           <VStack gap="20px">
-            <VStack color="#0B2A3B">
+            <VStack>
               <Text fontWeight="bold" fontSize="1.1rem">
                 Hi ! I am
               </Text>
@@ -75,7 +81,7 @@ const HeroSection = () => {
           </VStack>
         </Center>
       </ContainerMaxWidth>
-    </Box>
+    </Center>
   );
 };
 
