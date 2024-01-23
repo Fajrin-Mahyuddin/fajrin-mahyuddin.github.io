@@ -1,13 +1,234 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosBlack-Italic.eot');
+    src: url('./assets/fonts/CarosBlack-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosBlack-Italic.woff2') format('woff2'),
+        url('./assets/fonts/CarosBlack-Italic.woff') format('woff'),
+        url('./assets/fonts/CarosBlack-Italic.ttf') format('truetype'),
+        url('./assets/fonts/CarosBlack-Italic.svg#CarosBlack-Italic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosBlack.eot');
+    src: url('./assets/fonts/CarosBlack.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosBlack.woff2') format('woff2'),
+        url('./assets/fonts/CarosBlack.woff') format('woff'),
+        url('./assets/fonts/CarosBlack.ttf') format('truetype'),
+        url('./assets/fonts/CarosBlack.svg#CarosBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosExtraBold-Italic.eot');
+    src: url('./assets/fonts/CarosExtraBold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosExtraBold-Italic.woff2') format('woff2'),
+        url('./assets/fonts/CarosExtraBold-Italic.woff') format('woff'),
+        url('./assets/fonts/CarosExtraBold-Italic.ttf') format('truetype'),
+        url('./assets/fonts/CarosExtraBold-Italic.svg#CarosExtraBold-Italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosBold-Italic.eot');
+    src: url('./assets/fonts/CarosBold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosBold-Italic.woff2') format('woff2'),
+        url('./assets/fonts/CarosBold-Italic.woff') format('woff'),
+        url('./assets/fonts/CarosBold-Italic.ttf') format('truetype'),
+        url('./assets/fonts/CarosBold-Italic.svg#CarosBold-Italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosBold.eot');
+    src: url('./assets/fonts/CarosBold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosBold.woff2') format('woff2'),
+        url('./assets/fonts/CarosBold.woff') format('woff'),
+        url('./assets/fonts/CarosBold.ttf') format('truetype'),
+        url('./assets/fonts/CarosBold.svg#CarosBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/Caros-Italic.eot');
+    src: url('./assets/fonts/Caros-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Caros-Italic.woff2') format('woff2'),
+        url('./assets/fonts/Caros-Italic.woff') format('woff'),
+        url('./assets/fonts/Caros-Italic.ttf') format('truetype'),
+        url('./assets/fonts/Caros-Italic.svg#Caros-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosExtraBold.eot');
+    src: url('./assets/fonts/CarosExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosExtraBold.woff2') format('woff2'),
+        url('./assets/fonts/CarosExtraBold.woff') format('woff'),
+        url('./assets/fonts/CarosExtraBold.ttf') format('truetype'),
+        url('./assets/fonts/CarosExtraBold.svg#CarosExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosHeavy-Italic.eot');
+    src: url('./assets/fonts/CarosHeavy-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosHeavy-Italic.woff2') format('woff2'),
+        url('./assets/fonts/CarosHeavy-Italic.woff') format('woff'),
+        url('./assets/fonts/CarosHeavy-Italic.ttf') format('truetype'),
+        url('./assets/fonts/CarosHeavy-Italic.svg#CarosHeavy-Italic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosExtraLight.eot');
+    src: url('./assets/fonts/CarosExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosExtraLight.woff2') format('woff2'),
+        url('./assets/fonts/CarosExtraLight.woff') format('woff'),
+        url('./assets/fonts/CarosExtraLight.ttf') format('truetype'),
+        url('./assets/fonts/CarosExtraLight.svg#CarosExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosExtraLight-Italic.eot');
+    src: url('./assets/fonts/CarosExtraLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosExtraLight-Italic.woff2') format('woff2'),
+        url('./assets/fonts/CarosExtraLight-Italic.woff') format('woff'),
+        url('./assets/fonts/CarosExtraLight-Italic.ttf') format('truetype'),
+        url('./assets/fonts/CarosExtraLight-Italic.svg#CarosExtraLight-Italic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosHeavy.eot');
+    src: url('./assets/fonts/CarosHeavy.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosHeavy.woff2') format('woff2'),
+        url('./assets/fonts/CarosHeavy.woff') format('woff'),
+        url('./assets/fonts/CarosHeavy.ttf') format('truetype'),
+        url('./assets/fonts/CarosHeavy.svg#CarosHeavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosThin.eot');
+    src: url('./assets/fonts/CarosThin.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosThin.woff2') format('woff2'),
+        url('./assets/fonts/CarosThin.woff') format('woff'),
+        url('./assets/fonts/CarosThin.ttf') format('truetype'),
+        url('./assets/fonts/CarosThin.svg#CarosThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosThin-Italic.eot');
+    src: url('./assets/fonts/CarosThin-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosThin-Italic.woff2') format('woff2'),
+        url('./assets/fonts/CarosThin-Italic.woff') format('woff'),
+        url('./assets/fonts/CarosThin-Italic.ttf') format('truetype'),
+        url('./assets/fonts/CarosThin-Italic.svg#CarosThin-Italic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/Caros.eot');
+    src: url('./assets/fonts/Caros.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Caros.woff2') format('woff2'),
+        url('./assets/fonts/Caros.woff') format('woff'),
+        url('./assets/fonts/Caros.ttf') format('truetype'),
+        url('./assets/fonts/Caros.svg#Caros') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosMedium.eot');
+    src: url('./assets/fonts/CarosMedium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosMedium.woff2') format('woff2'),
+        url('./assets/fonts/CarosMedium.woff') format('woff'),
+        url('./assets/fonts/CarosMedium.ttf') format('truetype'),
+        url('./assets/fonts/CarosMedium.svg#CarosMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosLight-Italic.eot');
+    src: url('./assets/fonts/CarosLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosLight-Italic.woff2') format('woff2'),
+        url('./assets/fonts/CarosLight-Italic.woff') format('woff'),
+        url('./assets/fonts/CarosLight-Italic.ttf') format('truetype'),
+        url('./assets/fonts/CarosLight-Italic.svg#CarosLight-Italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosLight.eot');
+    src: url('./assets/fonts/CarosLight.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosLight.woff2') format('woff2'),
+        url('./assets/fonts/CarosLight.woff') format('woff'),
+        url('./assets/fonts/CarosLight.ttf') format('truetype'),
+        url('./assets/fonts/CarosLight.svg#CarosLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./assets/fonts/CarosMedium-Italic.eot');
+    src: url('./assets/fonts/CarosMedium-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/CarosMedium-Italic.woff2') format('woff2'),
+        url('./assets/fonts/CarosMedium-Italic.woff') format('woff'),
+        url('./assets/fonts/CarosMedium-Italic.ttf') format('truetype'),
+        url('./assets/fonts/CarosMedium-Italic.svg#CarosMedium-Italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

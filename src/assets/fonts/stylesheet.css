@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosBlack-Italic.eot');
+    src: url('CarosBlack-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CarosBlack-Italic.woff2') format('woff2'),
+        url('CarosBlack-Italic.woff') format('woff'),
+        url('CarosBlack-Italic.ttf') format('truetype'),
+        url('CarosBlack-Italic.svg#CarosBlack-Italic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosBlack.eot');
+    src: url('CarosBlack.eot?#iefix') format('embedded-opentype'),
+        url('CarosBlack.woff2') format('woff2'),
+        url('CarosBlack.woff') format('woff'),
+        url('CarosBlack.ttf') format('truetype'),
+        url('CarosBlack.svg#CarosBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosExtraBold-Italic.eot');
+    src: url('CarosExtraBold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CarosExtraBold-Italic.woff2') format('woff2'),
+        url('CarosExtraBold-Italic.woff') format('woff'),
+        url('CarosExtraBold-Italic.ttf') format('truetype'),
+        url('CarosExtraBold-Italic.svg#CarosExtraBold-Italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosBold-Italic.eot');
+    src: url('CarosBold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CarosBold-Italic.woff2') format('woff2'),
+        url('CarosBold-Italic.woff') format('woff'),
+        url('CarosBold-Italic.ttf') format('truetype'),
+        url('CarosBold-Italic.svg#CarosBold-Italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosBold.eot');
+    src: url('CarosBold.eot?#iefix') format('embedded-opentype'),
+        url('CarosBold.woff2') format('woff2'),
+        url('CarosBold.woff') format('woff'),
+        url('CarosBold.ttf') format('truetype'),
+        url('CarosBold.svg#CarosBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('Caros-Italic.eot');
+    src: url('Caros-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Caros-Italic.woff2') format('woff2'),
+        url('Caros-Italic.woff') format('woff'),
+        url('Caros-Italic.ttf') format('truetype'),
+        url('Caros-Italic.svg#Caros-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosExtraBold.eot');
+    src: url('CarosExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('CarosExtraBold.woff2') format('woff2'),
+        url('CarosExtraBold.woff') format('woff'),
+        url('CarosExtraBold.ttf') format('truetype'),
+        url('CarosExtraBold.svg#CarosExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosHeavy-Italic.eot');
+    src: url('CarosHeavy-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CarosHeavy-Italic.woff2') format('woff2'),
+        url('CarosHeavy-Italic.woff') format('woff'),
+        url('CarosHeavy-Italic.ttf') format('truetype'),
+        url('CarosHeavy-Italic.svg#CarosHeavy-Italic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosExtraLight.eot');
+    src: url('CarosExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('CarosExtraLight.woff2') format('woff2'),
+        url('CarosExtraLight.woff') format('woff'),
+        url('CarosExtraLight.ttf') format('truetype'),
+        url('CarosExtraLight.svg#CarosExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosExtraLight-Italic.eot');
+    src: url('CarosExtraLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CarosExtraLight-Italic.woff2') format('woff2'),
+        url('CarosExtraLight-Italic.woff') format('woff'),
+        url('CarosExtraLight-Italic.ttf') format('truetype'),
+        url('CarosExtraLight-Italic.svg#CarosExtraLight-Italic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosHeavy.eot');
+    src: url('CarosHeavy.eot?#iefix') format('embedded-opentype'),
+        url('CarosHeavy.woff2') format('woff2'),
+        url('CarosHeavy.woff') format('woff'),
+        url('CarosHeavy.ttf') format('truetype'),
+        url('CarosHeavy.svg#CarosHeavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosThin.eot');
+    src: url('CarosThin.eot?#iefix') format('embedded-opentype'),
+        url('CarosThin.woff2') format('woff2'),
+        url('CarosThin.woff') format('woff'),
+        url('CarosThin.ttf') format('truetype'),
+        url('CarosThin.svg#CarosThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosThin-Italic.eot');
+    src: url('CarosThin-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CarosThin-Italic.woff2') format('woff2'),
+        url('CarosThin-Italic.woff') format('woff'),
+        url('CarosThin-Italic.ttf') format('truetype'),
+        url('CarosThin-Italic.svg#CarosThin-Italic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('Caros.eot');
+    src: url('Caros.eot?#iefix') format('embedded-opentype'),
+        url('Caros.woff2') format('woff2'),
+        url('Caros.woff') format('woff'),
+        url('Caros.ttf') format('truetype'),
+        url('Caros.svg#Caros') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosMedium.eot');
+    src: url('CarosMedium.eot?#iefix') format('embedded-opentype'),
+        url('CarosMedium.woff2') format('woff2'),
+        url('CarosMedium.woff') format('woff'),
+        url('CarosMedium.ttf') format('truetype'),
+        url('CarosMedium.svg#CarosMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosLight-Italic.eot');
+    src: url('CarosLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CarosLight-Italic.woff2') format('woff2'),
+        url('CarosLight-Italic.woff') format('woff'),
+        url('CarosLight-Italic.ttf') format('truetype'),
+        url('CarosLight-Italic.svg#CarosLight-Italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosLight.eot');
+    src: url('CarosLight.eot?#iefix') format('embedded-opentype'),
+        url('CarosLight.woff2') format('woff2'),
+        url('CarosLight.woff') format('woff'),
+        url('CarosLight.ttf') format('truetype'),
+        url('CarosLight.svg#CarosLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('CarosMedium-Italic.eot');
+    src: url('CarosMedium-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CarosMedium-Italic.woff2') format('woff2'),
+        url('CarosMedium-Italic.woff') format('woff'),
+        url('CarosMedium-Italic.ttf') format('truetype'),
+        url('CarosMedium-Italic.svg#CarosMedium-Italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
