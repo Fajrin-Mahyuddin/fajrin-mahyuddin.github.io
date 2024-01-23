@@ -43,7 +43,7 @@ const skills = [
 
 const AboutSection = () => {
   return (
-    <Box as="section" id="about">
+    <Box as="section" id="about" minH="100vh">
       <ContainerMaxWidth>
         <Flex
           py="5%"

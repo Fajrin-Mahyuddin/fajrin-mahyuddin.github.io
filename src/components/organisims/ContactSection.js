@@ -8,10 +8,14 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import { MailIcon, PhoneIcon, XIcon } from "components/atoms";
-import { ContainerMaxWidth } from "components/templates";
+import {
+  MailIcon,
+  PhoneIcon,
+  XIcon,
+  ContainerMaxWidth,
+  FooterMenu,
+} from "components";
 import logo from "assets/images/new-logo.svg";
-import { Menu } from "components/molecules";
 import { NavLink } from "react-router-dom";
 
 const ContactSection = () => {
@@ -19,7 +23,7 @@ const ContactSection = () => {
     <Box as="section" bgColor="#f8f7f1" id="contact">
       <ContainerMaxWidth>
         <Flex
-          minH="50vh"
+          minH="30vh"
           py="3%"
           flexDir="column"
           gap={12}
@@ -29,7 +33,12 @@ const ContactSection = () => {
             <Heading textAlign="center">Contact</Heading>
             <Text textAlign="center">Get in touch</Text>
           </Box>
-          <HStack justifyContent="space-evenly">
+          <Flex
+            flexDir={["column", "column", "row"]}
+            justifyContent="space-evenly"
+            alignItems="center"
+            gap={5}
+          >
             <HStack
               as={NavLink}
               to="# "
@@ -37,8 +46,8 @@ const ContactSection = () => {
                 color: "#E6AB35",
               }}
             >
-              <PhoneIcon boxSize="10" />
-              <Text fontSize="1.5rem" fontWeight="bold">
+              <PhoneIcon boxSize="8" />
+              <Text fontSize={["1.1rem", "1.1rem", "1.3rem"]} fontWeight="bold">
                 +6285-395547094
               </Text>
             </HStack>
@@ -49,8 +58,8 @@ const ContactSection = () => {
                 color: "#E6AB35",
               }}
             >
-              <MailIcon boxSize="10" />
-              <Text fontSize="1.5rem" fontWeight="bold">
+              <MailIcon boxSize="8" />
+              <Text fontSize={["1.1rem", "1.1rem", "1.3rem"]} fontWeight="bold">
                 fajrin.mahyuddin01@gmail.com
               </Text>
             </HStack>
@@ -62,28 +71,33 @@ const ContactSection = () => {
                 color: "#E6AB35",
               }}
             >
-              <XIcon boxSize="10" />
-              <Text fontSize="1.5rem" fontWeight="bold">
+              <XIcon boxSize="8" />
+              <Text fontSize={["1.1rem", "1.1rem", "1.3rem"]} fontWeight="bold">
                 @Fajrin__M
               </Text>
             </HStack>
-          </HStack>
+          </Flex>
           <Box>
             <Divider
               opacity="1"
-              my="10px"
+              my="20px"
               height="3px"
               backgroundColor="#0B2A3B"
             />
-            <HStack gap={2} justifyContent="space-between">
+            <Flex
+              flexDir={["column", "column", "row"]}
+              gap={4}
+              justifyContent="space-between"
+              alignItems="center"
+            >
               <HStack>
                 <Image w="60px" src={logo} alt="footer image logo" />
                 <Text fontWeight="bold" fontSize="1.2rem">
                   &copy; {new Date().getFullYear()}
                 </Text>
               </HStack>
-              <Box>{/* <Menu /> */}</Box>
-            </HStack>
+              <FooterMenu />
+            </Flex>
           </Box>
         </Flex>
       </ContainerMaxWidth>

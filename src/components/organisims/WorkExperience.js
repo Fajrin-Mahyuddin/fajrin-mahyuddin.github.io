@@ -32,7 +32,7 @@ const experiences = [
 
 const WorkExperience = () => {
   return (
-    <Box id="work" bgColor="#f8f7f1">
+    <Box id="work-experience" bgColor="#f8f7f1">
       <ContainerMaxWidth>
         <Flex py="3%" flexDir="column" gap={12}>
           <Heading textAlign="center">Work Experience</Heading>

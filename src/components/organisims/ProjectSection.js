@@ -1,8 +1,41 @@
 import React from "react";
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import { ContainerMaxWidth } from "components/templates";
+import {
+  Box,
+  Button,
+  Flex,
+  HStack,
+  Heading,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 import project_one from "assets/images/project-1.png";
 import project_two from "assets/images/project-2.png";
+import project_three from "assets/images/project-3.png";
+import { GitIcon, ContainerMaxWidth } from "components";
+
+const projects = [
+  {
+    img: project_one,
+    name: "Landing Page",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    liveUrl: "https://landing-page-fajrin.netlify.app",
+    codeRepo: "https://github.com/Fajrin-Mahyuddin/landing-page-lasles-vpn",
+  },
+  {
+    img: project_two,
+    name: "Coffe and Blog",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    liveUrl: "https://coffee-app-ssr.vercel.app",
+    codeRepo: "https://github.com/Fajrin-Mahyuddin/coffee-app-ssr",
+  },
+  {
+    img: project_three,
+    name: "Official Website",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    liveUrl: "",
+    codeRepo: "https://github.com/Fajrin-Mahyuddin/smkn2-majene",
+  },
+];
 
 const ProjectSeciton = () => {
   return (
@@ -14,37 +47,122 @@ const ProjectSeciton = () => {
             <Text>Explore all projects</Text>
           </Box>
           <Box
-            display="inline-block"
-            whiteSpace="nowrap"
-            width="100%"
-            overflowX="auto"
+            gap={14}
             py="20px"
+            flexDir={["", "", "column"]}
+            overflowX={["auto", "auto", "hidden"]}
+            whiteSpace={["nowrap", "nowrap", "initial"]}
+            display={["inline-block", "inline-block", "flex"]}
             sx={{
-              "& div:not(:last-child)": {
-                marginRight: "20px",
+              "&::-webkit-scrollbar": {
+                height: "8px",
+              },
+              "&::-webkit-scrollbar-track": {
+                borderRadius: "10px",
+                backgroundColor: "grey",
+              },
+              "&::-webkit-scrollbar-thumb": {
+                borderRadius: "10px",
+                backgroundColor: "#0B2A3B",
               },
             }}
           >
-            {Array.from({ length: 2 }).map((_, i) => {
+            {projects.map((item, i) => {
               return (
-                <>
+                <Box
+                  key={i}
+                  gap={10}
+                  role="group"
+                  pos="relative"
+                  overflow="hidden"
+                  width={["300px", "300px", "100%"]}
+                  marginRight={["10px", "10px", "0"]}
+                  flexDir={i % 2 ? "row-reverse" : "row"}
+                  display={["inline-block", "inline-block", "flex"]}
+                >
                   <Box
-                    borderRadius="20px"
+                    maxW="500px"
                     overflow="hidden"
-                    display="inline-block"
-                    // boxShadow="rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"
+                    width={["100%", "100%", "50%"]}
+                    borderRadius={["15px", "15px", "20px"]}
+                    // boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px"
                   >
-                    <Image width="350px" src={project_one} alt="item scroll" />
+                    <Image src={item.img} alt="item scroll" />
                   </Box>
-                  <Box
-                    borderRadius="20px"
-                    overflow="hidden"
-                    display="inline-block"
-                    // boxShadow="rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"
+                  <Flex
+                    gap={6}
+                    bottom={0}
+                    left={0}
+                    width="100%"
+                    flexDir="column"
+                    whiteSpace="wrap"
+                    transition="all .3s"
+                    p={["10px", "10px", "0"]}
+                    height={["100%", "100%", "auto"]}
+                    borderRadius={["15px", "15px", "0"]}
+                    position={["absolute", "absolute", "static"]}
+                    bgColor={["#f8f7f1", "#f8f7f1", "transparent"]}
+                    justifyContent={["center", "center", "flex-start"]}
+                    alignItems={["center", "center", "flex-start"]}
+                    transform={[
+                      "translateY(101%)",
+                      "translateY(101%)",
+                      "translateY(0)",
+                    ]}
+                    _groupHover={{
+                      transform: "translateY(0)",
+                    }}
                   >
-                    <Image width="350px" src={project_two} alt="item scroll" />
-                  </Box>
-                </>
+                    <Box>
+                      <Heading
+                        fontSize={["1.3rem", "1.3rem", "1.5rem"]}
+                        mb="10px"
+                      >
+                        {item.name}
+                      </Heading>
+                      <Text
+                        fontSize={[".9rem", ".9rem", "initial"]}
+                        dangerouslySetInnerHTML={{ __html: item.desc }}
+                      />
+                    </Box>
+                    <HStack>
+                      <Button
+                        as="a"
+                        color="#fff"
+                        fontSize="18px"
+                        fontWeight="400"
+                        bgColor="#F26440"
+                        href={item.codeRepo}
+                        target="_blank"
+                        minW="140px"
+                        _hover={{}}
+                        _active={{}}
+                        leftIcon={
+                          <GitIcon
+                            boxSize="7"
+                            bgIcon="#fff"
+                            colorIcon="#f26440"
+                          />
+                        }
+                      >
+                        Git
+                      </Button>
+                      <Button
+                        as="a"
+                        target="_blank"
+                        href={item.liveUrl}
+                        color="#fff"
+                        fontSize="18px"
+                        fontWeight="400"
+                        bgColor="#E6AB35"
+                        _hover={{}}
+                        _active={{}}
+                      >
+                        Live preview
+                      </Button>
+                    </HStack>
+                  </Flex>
+                </Box>
               );
             })}
           </Box>

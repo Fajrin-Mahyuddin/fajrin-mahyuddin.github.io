@@ -7,6 +7,8 @@ import XIcon from "./icons/XIcon";
 import NavItem from "./NavItem";
 import HamburgerIcon from "./icons/Hamburger";
 import CloseIcon from "./icons/CloseIcon";
+import GitIcon from "./icons/GitIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
 
 export {
   CodeIcon,
@@ -18,4 +20,6 @@ export {
   NavItem,
   HamburgerIcon,
   CloseIcon,
+  GitIcon,
+  LinkedinIcon,
 };

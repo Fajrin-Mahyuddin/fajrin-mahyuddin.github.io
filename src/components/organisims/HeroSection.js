@@ -11,18 +11,16 @@ import {
   Link,
 } from "@chakra-ui/react";
 import me from "assets/images/profile.png";
-import linkedin from "assets/images/icons/linkedin.svg";
-import git from "assets/images/icons/git.svg";
 
-import { ContainerMaxWidth } from "components";
+import { ContainerMaxWidth, GitIcon, LinkedinIcon } from "components";
 
 const HeroSection = () => {
   return (
     <Center
       as="section"
       width="100vw"
-      height="100vh"
-      id="home"
+      minH="100dvh"
+      id="main"
       backgroundColor="#F8F7F1"
     >
       <ContainerMaxWidth>
@@ -44,6 +42,9 @@ const HeroSection = () => {
             </VStack>
             <HStack>
               <Button
+                as="a"
+                href="./files/cv-fajrin-mahyuddin.pdf"
+                target="_blank"
                 fontSize="18px"
                 fontWeight="400"
                 bgColor="#F26440"
@@ -72,10 +73,10 @@ const HeroSection = () => {
                 target="_blank"
                 href="https://www.linkedin.com/in/fajrin-mahyuddin"
               >
-                <Image src={linkedin} alt="linkedin url" />
+                <LinkedinIcon />
               </Link>
               <Link target="_blank" href="https://github.com/Fajrin-Mahyuddin">
-                <Image src={git} alt="git url" />
+                <GitIcon colorIcon="#f8f7f1" />
               </Link>
             </HStack>
           </VStack>

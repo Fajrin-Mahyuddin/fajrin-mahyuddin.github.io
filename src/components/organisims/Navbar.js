@@ -12,7 +12,6 @@ const Navbar = () => {
       "scroll",
       () => {
         let pos = window.scrollY;
-        console.log("pos", pos);
         if (pos > 10) {
           navRef.current.style.backgroundColor = "#f8f7f1";
           navRef.current.style.boxShadow =
@@ -47,7 +46,6 @@ const Navbar = () => {
           <NavLink as={Link} to="/">
             <Image src={logo} alt="new logo" />
           </NavLink>
-
           <Menu />
         </Flex>
       </ContainerMaxWidth>

@@ -1,6 +1,15 @@
 import React, { useState } from "react";
-import { Button } from "@chakra-ui/react";
+import { Button, Flex, Link as FooterLink } from "@chakra-ui/react";
 import { NavItem, HamburgerIcon, CloseIcon, CostumeDrawer } from "components";
+import { Link } from "react-scroll";
+
+const menus = [
+  { label: "Main", path: "main" },
+  { label: "About", path: "about" },
+  { label: "Experience", path: "work-experience" },
+  { label: "Project", path: "project" },
+  // { label: "+6285-395547094", path: "contact" },
+];
 
 const Menu = () => {
   const [isOpen, setOpen] = useState(false);
@@ -24,28 +33,43 @@ const Menu = () => {
         >
           <CloseIcon boxSize="10" />
         </Button>
-        <NavItem
-          setDrawerClose={() => setOpen(false)}
-          path="about"
-          label="About"
-        />
-        <NavItem
-          setDrawerClose={() => setOpen(false)}
-          path="work"
-          label="Experience"
-        />
-        <NavItem
-          setDrawerClose={() => setOpen(false)}
-          path="project"
-          label="Project"
-        />
-        <NavItem
-          setDrawerClose={() => setOpen(false)}
-          path="contact"
-          label="Contact"
-        />
+        {menus.map((item, i) => {
+          return (
+            <NavItem
+              key={i}
+              setDrawerClose={() => setOpen(false)}
+              path={item.path}
+              label={item.label}
+            />
+          );
+        })}
       </CostumeDrawer>
     </>
+  );
+};
+
+export const FooterMenu = () => {
+  return (
+    <Flex gap={[4, 4, 10]}>
+      {menus.map((item, i) => {
+        return (
+          <FooterLink
+            key={i}
+            as={Link}
+            to={item.path}
+            offset={-81}
+            smooth={true}
+            spy={true}
+            duration={500}
+            color="#0B2A3B"
+            userSelect="none"
+            _hover={{ color: "#E6AB35" }}
+          >
+            {item.label}
+          </FooterLink>
+        );
+      })}
+    </Flex>
   );
 };
 
