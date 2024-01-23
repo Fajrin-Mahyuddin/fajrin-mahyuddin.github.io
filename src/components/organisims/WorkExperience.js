@@ -10,7 +10,7 @@ const experiences = [
     position: "Fulltime Remote Frontend Developer",
     color: "#286F6C",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br /> <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ",
+      "Full-time remote Frontend Developer at a private company in Singapore, responsible for creating the UI for various projects. I use NextJS and Typescript as the main frameworks to ensure the successful completion of our projects",
   },
   {
     company: "Pallaka Studio",
@@ -18,7 +18,7 @@ const experiences = [
     position: "Fulltime Remote Frontend Developer",
     color: "#E6AB35",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "Working as a frontend developer, I handle all UI projects. Leveraging Docker, ReactJS, and Javascript as our core technologies, we ensure the successful completion of every project",
   },
   {
     company: "PT Cipta Sejati Revolution",
@@ -26,7 +26,7 @@ const experiences = [
     position: "Fullstack Developer",
     color: "#F26440",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "As the full-stack position at this company, my responsibilities span both the backend and frontend even server, along with providing IT support. I utilize PHP and jQuery to successfully complete our projects, taking charge of various tasks across the entire development spectrum.",
   },
 ];
 

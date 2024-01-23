@@ -11,35 +11,35 @@ import {
 import project_one from "assets/images/project-1.png";
 import project_two from "assets/images/project-2.png";
 import project_three from "assets/images/project-3.png";
-import { GitIcon, ContainerMaxWidth } from "components";
+import { GitIcon, ContainerMaxWidth, LivePreviewIcon } from "components";
 
 const projects = [
   {
     img: project_one,
     name: "Landing Page",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    desc: "This landing page was built using native JavaScript and CSS. It features smooth animations like sliding cards, smooth scrolling, and is very lightweight. The shadow color enhances its appearance even more.",
     liveUrl: "https://landing-page-fajrin.netlify.app",
     codeRepo: "https://github.com/Fajrin-Mahyuddin/landing-page-lasles-vpn",
   },
   {
     img: project_two,
     name: "Coffe and Blog",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    desc: "This website serves as an example of a marketplace and is built using NextJS. The content focuses on selling coffee makers and includes some blog posts about coffee. Additionally, it features news content retrieved from another API website. The technologies used include Firebase, GraphQL, and Sass. Please note that this website is not yet completed and is currently under development.",
     liveUrl: "https://coffee-app-ssr.vercel.app",
     codeRepo: "https://github.com/Fajrin-Mahyuddin/coffee-app-ssr",
   },
   {
     img: project_three,
     name: "Official Website",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    liveUrl: "",
+    desc: "This official website served as my senior high school project, providing various information about profiles, registration for new students, blogs, student activities, and more. I used Laravel, InertiaJS, and ReactJS to build this website. Overcoming numerous challenges, I successfully completed it, and the process significantly contributed to enhancing both my experience and skills.",
+    liveUrl: "#",
     codeRepo: "https://github.com/Fajrin-Mahyuddin/smkn2-majene",
   },
 ];
 
 const ProjectSeciton = () => {
   return (
-    <Box as="section" id="project" minH="80vh">
+    <Box as="section" id="project" minH={["auto", "auto", "80vh"]}>
       <ContainerMaxWidth>
         <Flex py="3%" gap={12} flexDir="column">
           <Box textAlign="center">
@@ -122,6 +122,13 @@ const ProjectSeciton = () => {
                       </Heading>
                       <Text
                         fontSize={[".9rem", ".9rem", "initial"]}
+                        textOverflow="ellipsis"
+                        sx={{
+                          display: "-webkit-box",
+                          WebkitLineClamp: 5,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                        }}
                         dangerouslySetInnerHTML={{ __html: item.desc }}
                       />
                     </Box>
@@ -134,7 +141,7 @@ const ProjectSeciton = () => {
                         bgColor="#F26440"
                         href={item.codeRepo}
                         target="_blank"
-                        minW="140px"
+                        // minW="140px"
                         _hover={{}}
                         _active={{}}
                         leftIcon={
@@ -157,6 +164,7 @@ const ProjectSeciton = () => {
                         bgColor="#E6AB35"
                         _hover={{}}
                         _active={{}}
+                        leftIcon={<LivePreviewIcon bgIcon="#fff" boxSize="5" />}
                       >
                         Live preview
                       </Button>

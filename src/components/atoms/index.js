@@ -9,6 +9,7 @@ import HamburgerIcon from "./icons/Hamburger";
 import CloseIcon from "./icons/CloseIcon";
 import GitIcon from "./icons/GitIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
+import LivePreviewIcon from "./icons/LivePreviewIcon";
 
 export {
   CodeIcon,
@@ -22,4 +23,5 @@ export {
   CloseIcon,
   GitIcon,
   LinkedinIcon,
+  LivePreviewIcon,
 };
