@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-// import "./index.css";
+import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Dashboard } from "pages";
 import { ChakraProvider } from "@chakra-ui/react";
