@@ -1,17 +1,13 @@
 import React from "react";
-import { Layout } from "antd";
+import { Box } from "@chakra-ui/react";
 import { Navbar } from "components";
-const { Footer, Content } = Layout;
 
 const Layouts = ({ children }) => {
   return (
-    <Layout>
+    <Box pos="relative" overflow="hidden">
       <Navbar />
-      <Content>{children}</Content>
-      <Footer className="text-center">
-        {new Date().getFullYear()} &copy; Fajrin Mahyuddin
-      </Footer>
-    </Layout>
+      <Box id="child">{children}</Box>
+    </Box>
   );
 };
 

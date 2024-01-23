@@ -1,7 +1,6 @@
-import InputLabel from "./input/input_label";
-import NavbarMenu from "./navbar-menu/navbar_menu";
-import SearchInput from "./search/search";
-import CardSlider from "./cards/card_slider";
-import Tabs from "./tabs/tabs";
+import SkillsBoard from "./SkillsBoard";
+import WorkExperienceItem from "./WorkExperienceItem";
+import Menu, { FooterMenu } from "./Menu";
+import CostumeDrawer from "./CostumeDrawer";
 
-export { InputLabel, SearchInput, NavbarMenu, CardSlider, Tabs };
+export { SkillsBoard, WorkExperienceItem, Menu, CostumeDrawer, FooterMenu };
