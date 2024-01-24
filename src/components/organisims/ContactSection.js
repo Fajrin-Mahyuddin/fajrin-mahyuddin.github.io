@@ -8,13 +8,7 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import {
-  MailIcon,
-  PhoneIcon,
-  XIcon,
-  ContainerMaxWidth,
-  FooterMenu,
-} from "components";
+import { MailIcon, XIcon, ContainerMaxWidth, FooterMenu } from "components";
 import logo from "assets/images/new-logo.svg";
 import { NavLink } from "react-router-dom";
 
