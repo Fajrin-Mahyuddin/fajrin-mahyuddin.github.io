@@ -8,13 +8,7 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import {
-  MailIcon,
-  PhoneIcon,
-  XIcon,
-  ContainerMaxWidth,
-  FooterMenu,
-} from "components";
+import { MailIcon, XIcon, ContainerMaxWidth, FooterMenu } from "components";
 import logo from "assets/images/new-logo.svg";
 import { NavLink } from "react-router-dom";
 
@@ -39,7 +33,7 @@ const ContactSection = () => {
             alignItems="center"
             gap={5}
           >
-            <HStack
+            {/* <HStack
               as={NavLink}
               to="# "
               _hover={{
@@ -50,7 +44,7 @@ const ContactSection = () => {
               <Text fontSize={["1.1rem", "1.1rem", "1.3rem"]} fontWeight="bold">
                 +6285-395547094
               </Text>
-            </HStack>
+            </HStack> */}
             <HStack
               as={NavLink}
               to="mailto:fajrin.mahyuddin01@gmail.com"
