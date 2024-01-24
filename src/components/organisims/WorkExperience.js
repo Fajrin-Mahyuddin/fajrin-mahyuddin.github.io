@@ -10,7 +10,7 @@ const experiences = [
     position: "Fulltime Remote Frontend Developer",
     color: "#286F6C",
     description:
-      "Full-time remote Frontend Developer at a private company in Singapore, responsible for creating the UI for various projects. I use NextJS and Typescript as the main frameworks to ensure the successful completion of our projects",
+      "Full-time remote Frontend Developer at a private company in Singapore, responsible for creating the UI for various projects. I use NextJS and Typescript as the main frameworks to ensure the successful completion of our projects.",
   },
   {
     company: "Pallaka Studio",
@@ -18,7 +18,7 @@ const experiences = [
     position: "Fulltime Remote Frontend Developer",
     color: "#E6AB35",
     description:
-      "Working as a frontend developer, I handle all UI projects. Leveraging Docker, ReactJS, and Javascript as our core technologies, we ensure the successful completion of every project",
+      "Working as a frontend developer, I handle all UI projects. Leveraging Docker, ReactJS, and Javascript as our core technologies, we ensure the successful completion of every project.",
   },
   {
     company: "PT Cipta Sejati Revolution",
