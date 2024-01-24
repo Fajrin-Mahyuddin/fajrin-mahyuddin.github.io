@@ -25,7 +25,15 @@ const SkillsBoard = ({ skill, icon, color, stack }) => {
         <Ico bgIcon={color} />
         <Heading fontSize="1.2rem">{skill}</Heading>
       </HStack>
-      <Grid templateColumns="repeat(3, auto)" gap="10px" mt="20px">
+      <Grid
+        templateColumns={[
+          "repeat(2,auto)",
+          "repeat(2, auto)",
+          "repeat(3, auto)",
+        ]}
+        gap="10px"
+        mt="20px"
+      >
         {stack.map((item, i) => {
           return (
             <GridItem

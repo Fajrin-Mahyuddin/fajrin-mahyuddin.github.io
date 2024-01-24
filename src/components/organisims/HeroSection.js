@@ -18,7 +18,7 @@ const HeroSection = () => {
   return (
     <Center
       as="section"
-      width="100vw"
+      width="auto"
       minH="100dvh"
       id="main"
       backgroundColor="#F8F7F1"

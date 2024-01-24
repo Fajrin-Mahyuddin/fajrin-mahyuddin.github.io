@@ -4,7 +4,7 @@ import { Navbar } from "components";
 
 const Layouts = ({ children }) => {
   return (
-    <Box pos="relative" overflow="hidden">
+    <Box pos="relative">
       <Navbar />
       <Box id="child">{children}</Box>
     </Box>
