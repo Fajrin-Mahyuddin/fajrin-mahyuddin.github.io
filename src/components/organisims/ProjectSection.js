@@ -7,8 +7,8 @@ import {
   Heading,
   Image,
   Text,
-  keyframes,
 } from "@chakra-ui/react";
+import { keyframes } from "@emotion/react";
 import project_one from "assets/images/project-1.png";
 import project_two from "assets/images/project-2.png";
 import project_three from "assets/images/project-3.png";
