@@ -6,7 +6,7 @@ import React from "react";
 const experiences = [
   {
     company: "Zodiac Solution, PTE Ltd",
-    period: "Okt 2021 - May 2024",
+    period: "Okt 2021 - Present",
     position: "Fulltime Remote - Frontend Developer",
     color: "#286F6C",
     description:
