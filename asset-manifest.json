@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8a3306b5.css",
-    "main.js": "/static/js/main.ef5bee7f.js",
+    "main.js": "/static/js/main.bbe6ef1a.js",
     "static/media/CarosThin-Italic.svg": "/static/media/CarosThin-Italic.b57603f8c5db98545826.svg",
     "static/media/Caros-Italic.svg": "/static/media/Caros-Italic.ff294c5ed13d302515ac.svg",
     "static/media/CarosExtraLight-Italic.svg": "/static/media/CarosExtraLight-Italic.8f429853f9297b09541a.svg",
@@ -99,10 +99,10 @@
     "static/media/Caros.woff2": "/static/media/Caros.d15fd4e83943bf02cdfc.woff2",
     "index.html": "/index.html",
     "main.8a3306b5.css.map": "/static/css/main.8a3306b5.css.map",
-    "main.ef5bee7f.js.map": "/static/js/main.ef5bee7f.js.map"
+    "main.bbe6ef1a.js.map": "/static/js/main.bbe6ef1a.js.map"
   },
   "entrypoints": [
     "static/css/main.8a3306b5.css",
-    "static/js/main.ef5bee7f.js"
+    "static/js/main.bbe6ef1a.js"
   ]
 }
